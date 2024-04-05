@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.shell.extensions.poweroffoptions" path="/org/gnome/shell/extensions/poweroffoptions/">
+        <key name="show-screenoff" type="b">
+            <default>true</default>
+        </key>
+        <key name="show-hibernate" type="b">
+            <default>true</default>
+        </key>
+    </schema>
+</schemalist>

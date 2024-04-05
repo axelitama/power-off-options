@@ -1,0 +1,10 @@
+{
+  "name": "Power Off Options",
+  "description": "add a button to turn off the screen in Gnome power off dialog",
+  "uuid": "poweroffoptions@axel",
+  "shell-version": [
+    "45"
+  ],
+  "url": "https://github.com/axelitama/poweroffoptions",
+  "settings-schema": "org.gnome.shell.extensions.poweroffoptions"
+}
