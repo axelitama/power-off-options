@@ -1,0 +1,7 @@
+{
+    "name": "Power Off Options",
+    "uuid": "power-off-options@axelitama.github.io",
+    "description": "Adds screen off and hibernation options to Gnome power off dialog",
+    "shell-version": ["48"],
+    "url": "https://github.com/axelitama/power-off-options"
+}

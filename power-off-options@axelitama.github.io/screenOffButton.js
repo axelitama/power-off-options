@@ -40,4 +40,9 @@ export default class ScreenOffButton {
         this._handler = null;
     }
 
+    destroy() {
+        this.removeButton();
+        this._systemMenu = null;
+    }
+
 }

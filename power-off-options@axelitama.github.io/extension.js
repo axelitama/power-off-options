@@ -1,3 +1,4 @@
+import GLib from 'gi://GLib';
 import {Extension, gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 import * as LoginManager from 'resource:///org/gnome/shell/misc/loginManager.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
@@ -29,40 +30,43 @@ export default class PowerOffOptions extends Extension {
     }
 
     enable() {
-        this._initDeferredId = imports.mainloop.idle_add( () => {
+        this._initDeferredId = GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
             this._systemMenu = Main.panel.statusArea.quickSettings._system;
             this._loginManager = LoginManager.getLoginManager();
             this._settings = this.getSettings();
             if(!this._systemMenu || !this._loginManager || !this._settings)
-                return true;
+                return GLib.SOURCE_CONTINUE;
 
             this._screenOffButton = new ScreenOffButton(this._systemMenu);
-            this._hibernationButton = new HibernationButton(this._systemMenu, this._loginManager);
+            this._hibernationButton = new HibernationButton(this._systemMenu);
 
             this._syncSettings();
-            this.settingsConnectionId = this._settings.connect('changed', () => this._syncSettings());
+            this._settingsConnectionId = this._settings.connect('changed', () => this._syncSettings());
 
             this._initDeferredId = null;
-            return false;
+            return GLib.SOURCE_REMOVE;
         })
     }
 
     disable() {
         if(this._initDeferredId) {
-            Mainloop.source_remove(this._initDeferredId);
+            GLib.Source.remove(this._initDeferredId);
             this._initDeferredId = null;
         }
 
-        if(this.settingsConnectionId) {
+        if(this._settingsConnectionId) {
             this._settings.disconnect(this._settingsChangedId);
-            this.settingsConnectionId = null;
+            this._settingsConnectionId = null;
         }
+
+        this._screenOffButton?.destroy();
+        this._hibernationButton?.destroy();
 
         this._systemMenu = null;
         this._loginManager = null;
         this._settings = null;
-        this._screenOffButton.removeButton();
-        this._hibernationButton.removeButton();
+        this._hibernationButton = null;
+        this._screenOffButton = null;
     }
 
 }

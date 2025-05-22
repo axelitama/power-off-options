@@ -5,11 +5,10 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
 export default class HibernationButton {
     
-    constructor(systemMenu, loginManager) {
+    constructor(systemMenu) {
         this._button = null;
         this._handler = null;
         this._systemMenu = systemMenu;
-        this._loginManager = loginManager;
     }
 
     addButton(position) {
@@ -32,13 +31,18 @@ export default class HibernationButton {
     }
 
     removeButton() {
-        if(this._button !== undefined && this._button !== null) {
+        if(this._button) {
             this._button.disconnect(this._handler);
             this._button.destroy();
         }
 
         this._button = null;
         this._handler = null;
+    }
+
+    destroy() {
+        this.removeButton();
+        this._systemMenu = null;
     }
 
 }

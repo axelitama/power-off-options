@@ -1,4 +1,4 @@
-EXTENSION_NAME=power-off-options@axel
+EXTENSION_NAME=power-off-options@axelitama.github.io
 EXTENSION_DIR=$(HOME)/.local/share/gnome-shell/extensions/$(EXTENSION_NAME)
 SRC_DIR=$(PWD)/$(EXTENSION_NAME)
 
