@@ -14,13 +14,15 @@ These buttons are integrated into the GNOME system menu, making them easy to acc
 - GNOME Shell (compatible with GNOME 44+)
 - Your system must support `xset` and `systemctl hibernate`.
 
-> **Note**: Ensure that hibernation is enabled and configured on your system.
+**Note**: Ensure that hibernation is enabled and configured on your system.
 
 ## Installation
 
 1. Download or clone this repository;
 2. move into the extension directory;
-3. type `make` to install or `make uninstall` to uninstall the extension;
+3. run:
+    - `make` to install the extension;
+    - `make uninstall` to uninstall the extension;
 4. restart GNOME Shell to apply the changes (e.g. log out and log back in).
 
 ## Preferences
