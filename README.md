@@ -24,7 +24,7 @@ Manually:
     - `make uninstall` to uninstall the extension;
 4. restart GNOME Shell to apply the changes (e.g. log out and log back in).
 
-Otherwise it can be installed from the GNOME Extensions website:
+Otherwise it can be installed from the GNOME Extensions website:  
 <https://extensions.gnome.org/extension/8189/power-off-options/> 
 
 ## Preferences
