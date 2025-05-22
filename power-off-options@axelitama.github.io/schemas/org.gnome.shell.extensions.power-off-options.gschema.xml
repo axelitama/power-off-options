@@ -2,7 +2,7 @@
 <schemalist>
     <schema id="org.gnome.shell.extensions.power-off-options" path="/org/gnome/shell/extensions/power-off-options/">
         <key name="show-screenoff" type="b">
-            <default>true</default>
+            <default>false</default>
         </key>
         <key name="show-hibernate" type="b">
             <default>true</default>

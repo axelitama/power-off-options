@@ -23,7 +23,7 @@ export default class ExamplePreferences extends ExtensionPreferences {
         // Create a new preferences row for 'show-screenoff'
         const screenOffRow = new Adw.SwitchRow({
             title: _('Show Screen Off'),
-            subtitle: _('Whether to show the screen off button'),
+            subtitle: _('Whether to show the screen off button. \n <b>Note:</b> this function only works in X11, Wayland is not supported.'),
         });
         group.add(screenOffRow);
     

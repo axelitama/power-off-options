@@ -2,7 +2,7 @@
 
 Power Off Options is a GNOME Shell extension that adds two additional buttons to the Power Off dialog:
 
-- **Turn Off Screen** — Instantly powers off the monitor.
+- **Turn Off Screen** — Instantly powers off the monitor (only works in X11, does not support Wayland).
 - **Hibernate** — Suspends the system to disk.
 
 ![screenshot](resources/screenshot.png)
