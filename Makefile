@@ -24,4 +24,5 @@ clean:
 
 zip: clean
 	@echo "Creating zip archive $(ZIP_NAME)..."
-	zip -r "$(ZIP_NAME)" "$(EXTENSION_NAME)" -x '*.zip' '*.swp' '*~' '#*#' '.*'
+	rm -f "$(ZIP_NAME)"
+	cd $(SRC_DIR) && zip -r "../$(ZIP_NAME)" "." -x '*.zip' '*.swp' '*~' '#*#' '.*'
