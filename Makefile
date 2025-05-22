@@ -1,8 +1,9 @@
 EXTENSION_NAME=power-off-options@axelitama.github.io
 EXTENSION_DIR=$(HOME)/.local/share/gnome-shell/extensions/$(EXTENSION_NAME)
 SRC_DIR=$(PWD)/$(EXTENSION_NAME)
+ZIP_NAME=$(EXTENSION_NAME).zip
 
-.PHONY: build clean install uninstall
+.PHONY: build clean install uninstall zip
 
 install: uninstall build
 	@echo "Installing extension to $(EXTENSION_DIR)..."
@@ -20,3 +21,7 @@ build: clean
 clean:
 	@echo "Removing compiled schemas..."
 	rm -f $(SRC_DIR)/schemas/gschemas.compiled
+
+zip: clean
+	@echo "Creating zip archive $(ZIP_NAME)..."
+	zip -r "$(ZIP_NAME)" "$(EXTENSION_NAME)" -x '*.zip' '*.swp' '*~' '#*#' '.*'
