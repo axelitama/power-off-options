@@ -9,12 +9,6 @@ These buttons are integrated into the GNOME system menu, making them easy to acc
 
 ![screenshot](resources/screenshot.png)
 
-## Features
-
-- Toggle display of "Turn Off Screen" and "Hibernate" buttons independently.
-- Simple and lightweight.
-- Settings integrated via GNOME Extensions preferences.
-
 ## Requirements
 
 - GNOME Shell (compatible with GNOME 44+)
@@ -29,5 +23,12 @@ These buttons are integrated into the GNOME system menu, making them easy to acc
 3. type `make` to install or `make uninstall` to uninstall the extension;
 4. restart GNOME Shell to apply the changes (e.g. log out and log back in).
 
+## Preferences
 
+You can enable or disable each button individually using the built-in preferences window:
 
+```bash
+gnome-extensions prefs power-off-options@axelitama.github.io
+```
+
+The same window is also accessible from the **GNOME Extensions** application.
