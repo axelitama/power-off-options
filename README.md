@@ -1,1 +1,1 @@
-# gnome-shell-extension-PowerOffOptions
+# Power-Off Options
