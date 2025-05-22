@@ -9,8 +9,8 @@ Power Off Options is a GNOME Shell extension that adds two additional buttons to
 
 ## Requirements
 
-- GNOME Shell (compatible with GNOME 44+)
-- Your system must support `xset` and `systemctl hibernate`.
+- GNOME Shell;
+- X11 windowing system for powering off the screen.
 
 **Note**: Ensure that hibernation is enabled and configured on your system.
 
