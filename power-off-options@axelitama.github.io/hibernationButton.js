@@ -27,7 +27,13 @@ export default class HibernationButton {
     }
 
     _execute() {
-        GLib.spawn_command_line_async('systemctl hibernate');
+        GLib.spawn_async(
+            null,
+            ['systemctl', 'hibernate'],
+            null,
+            GLib.SpawnFlags.SEARCH_PATH,
+        );
+
     }
 
     removeButton() {

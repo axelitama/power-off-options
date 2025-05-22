@@ -27,7 +27,12 @@ export default class ScreenOffButton {
     }
 
     _execute() {
-        GLib.spawn_command_line_async('xset dpms force off');
+        GLib.spawn_async(
+            null,
+            ['xset', 'dpms', 'force', 'off'],
+            null,
+            GLib.SpawnFlags.SEARCH_PATH
+        );
     }
 
     removeButton() {
