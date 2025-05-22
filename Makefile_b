@@ -1,0 +1,12 @@
+SCHEMA_DIR = schemas
+EXTENSION_DIR = ~/.local/share/gnome-shell/extensions/poweroffoptions@axel
+
+install:
+	rm -rf $(SCHEMA_DIR)/gschemas.compiled
+	rm -rf $(EXTENSION_DIR)
+	glib-compile-schemas $(SCHEMA_DIR)
+	mkdir -p $(EXTENSION_DIR)
+	cp -r ./* $(EXTENSION_DIR)
+
+zip:
+	zip -r "poweroffoptions@axel.zip" ./ --exclude="*.git*" --exclude="*.zip" --exclude="*.DS_Store" --exclude="*.vscode*" --exclude="*.idea*" --exclude="*.gitignore" --exclude="*.gitattributes" --exclude="*.editorconfig" --exclude="*.gitmodules" --exclude="*.gitkeep"

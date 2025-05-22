@@ -1,7 +1,10 @@
-import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import GLib from 'gi://GLib';
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
+
+
 
 export default class ScreenOffButton {
+    
     constructor(systemMenu) {
         this._button = null;
         this._handler = null;

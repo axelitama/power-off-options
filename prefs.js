@@ -1,10 +1,11 @@
-import Gio from 'gi://Gio';
 import Adw from 'gi://Adw';
-
+import Gio from 'gi://Gio';
 import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 
+
 export default class ExamplePreferences extends ExtensionPreferences {
+
     fillPreferencesWindow(window) {
         // Create a preferences page, with a single group
         const page = new Adw.PreferencesPage({
@@ -38,4 +39,5 @@ export default class ExamplePreferences extends ExtensionPreferences {
         window._settings.bind('show-hibernate', hibernateRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         window._settings.bind('show-screenoff', screenOffRow, 'active', Gio.SettingsBindFlags.DEFAULT);
     }
+
 }
