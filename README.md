@@ -16,12 +16,16 @@ Power Off Options is a GNOME Shell extension that adds two additional buttons to
 
 ## Installation
 
-1. Download or clone this repository;
+Manually:
+1. download or clone this repository;
 2. move into the extension directory;
 3. run:
     - `make` to install the extension;
     - `make uninstall` to uninstall the extension;
 4. restart GNOME Shell to apply the changes (e.g. log out and log back in).
+
+Otherwise it can be installed from the GNOME Extensions website:
+<https://extensions.gnome.org/extension/8189/power-off-options/> 
 
 ## Preferences
 
