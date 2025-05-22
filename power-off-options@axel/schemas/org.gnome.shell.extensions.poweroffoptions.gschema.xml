@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-    <schema id="org.gnome.shell.extensions.poweroffoptions" path="/org/gnome/shell/extensions/poweroffoptions/">
+    <schema id="org.gnome.shell.extensions.power-off-options" path="/org/gnome/shell/extensions/power-off-options/">
         <key name="show-screenoff" type="b">
             <default>true</default>
         </key>

@@ -1,27 +1,22 @@
-UUID = poweroffoptions@axel
-ifeq ($(strip $(DESTDIR)),)
-	INSTALLTYPE = local
-	INSTALLBASE = $(HOME)/.local/share/gnome-shell/extensions
-else
-	INSTALLTYPE = system
-	SHARE_PREFIX = $(DESTDIR)/usr/share
-	INSTALLBASE = $(SHARE_PREFIX)/gnome-shell/extensions
-endif
-INSTALLNAME = poweroffoptions@axel
+EXTENSION_NAME=power-off-options@axel
+EXTENSION_DIR=$(HOME)/.local/share/gnome-shell/extensions/$(EXTENSION_NAME)
+SRC_DIR=$(PWD)/$(EXTENSION_NAME)
 
-.PHONY: default
-default: build
+.PHONY: build clean install uninstall
 
-.PHONY: build
+install: uninstall build
+	@echo "Installing extension to $(EXTENSION_DIR)..."
+	rm -rf "$(EXTENSION_DIR)"
+	cp -r "$(SRC_DIR)" "$(EXTENSION_DIR)"
 
-.PHONY: install
-install: build
-	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
-	mkdir -p $(INSTALLBASE)/$(INSTALLNAME)
-	cp -r ./* $(INSTALLBASE)/$(INSTALLNAME)
-
-.PHONY: uninstall
 uninstall:
-	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
+	@echo "Uninstalling extension from $(EXTENSION_DIR)..."
+	rm -rf "$(EXTENSION_DIR)"
 
-.PHONY: clean
+build: clean
+	@echo "Compiling schemas..."
+	glib-compile-schemas $(SRC_DIR)/schemas/
+
+clean:
+	@echo "Removing compiled schemas..."
+	rm -f $(SRC_DIR)/schemas/gschemas.compiled
