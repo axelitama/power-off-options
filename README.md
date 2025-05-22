@@ -3,7 +3,7 @@
 Power Off Options is a GNOME Shell extension that adds two additional buttons to the system's power menu:
 
 - **Turn Off Screen** — Instantly powers off the monitor.
-- **Hibernate** — Suspends the system to disk using `systemctl hibernate`.
+- **Hibernate** — Suspends the system to disk.
 
 These buttons are integrated into the GNOME system menu, making them easy to access without extra steps or commands.
 
