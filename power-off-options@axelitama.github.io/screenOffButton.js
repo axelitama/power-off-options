@@ -14,7 +14,7 @@ export default class ScreenOffButton {
     addButton(position) {
         if(this._button != null || this._button != undefined)
             return;
-        this._button = new PopupMenu.PopupMenuItem('Screen Off');
+        this._button = new PopupMenu.PopupMenuItem('Turn Off Screen');
         this._handler = this._button.connect(
             'activate',
             () => this._execute()
