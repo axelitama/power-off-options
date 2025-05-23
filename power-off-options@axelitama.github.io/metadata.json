@@ -1,7 +1,7 @@
 {
     "name": "Power Off Options",
     "uuid": "power-off-options@axelitama.github.io",
-    "description": "Adds \"Turn Off Screen\" and \"Hibernate\" options to Gnome power off dialog:\n- turning off the screen requires X11 windowing system;\n- hibernation must be enabled and configured in the system to work.",
+    "description": "Adds \"Turn Off Screen\" and \"Hibernate\" options to Gnome power off dialog.",
     "shell-version": ["48"],
     "url": "https://github.com/axelitama/power-off-options",
     "settings-schema": "org.gnome.shell.extensions.power-off-options"

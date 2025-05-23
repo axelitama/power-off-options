@@ -23,14 +23,14 @@ export default class ExamplePreferences extends ExtensionPreferences {
         // Create a new preferences row for 'show-screenoff'
         const screenOffRow = new Adw.SwitchRow({
             title: _('Show Screen Off'),
-            subtitle: _('Whether to show the screen off button. \n <b>Note:</b> this function only works in X11, Wayland is not supported.'),
+            subtitle: _('Whether to show the \"Turn Off Screen" button.\n <b>Note:</b> this function only works in X11, Wayland is not supported.'),
         });
         group.add(screenOffRow);
     
         // Create a new preferences row for 'show-hibernate'
         const hibernateRow = new Adw.SwitchRow({
             title: _('Show Hibernate'),
-            subtitle: _('Whether to show the hibernate button'),
+            subtitle: _('Whether to show the \"Hibernate\" button.\n <b>Note:</b> hibernation must be enabled and configured in your system.'),
         });
         group.add(hibernateRow);
     
