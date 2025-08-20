@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
     <schema id="org.gnome.shell.extensions.power-off-options" path="/org/gnome/shell/extensions/power-off-options/">
+
         <key name="show-screenoff" type="b">
             <default>false</default>
         </key>
+
+        <key name="show-hybrid-sleep" type="b">
+            <default>false</default>
+        </key>
+
+        <key name="show-suspend-then-hibernate" type="b">
+            <default>false</default>
+        </key>
+
         <key name="show-hibernate" type="b">
             <default>true</default>
         </key>
+
+        <key name="show-soft-reboot" type="b">
+            <default>false</default>
+        </key>
+
+        <key name="show-reboot-to-bios" type="b">
+            <default>false</default>
+        </key>
+        
     </schema>
 </schemalist>

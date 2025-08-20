@@ -7,7 +7,6 @@ ZIP_NAME=$(EXTENSION_NAME).zip
 
 install: uninstall build
 	@echo "Installing extension to $(EXTENSION_DIR)..."
-	rm -rf "$(EXTENSION_DIR)"
 	cp -r "$(SRC_DIR)" "$(EXTENSION_DIR)"
 
 uninstall:

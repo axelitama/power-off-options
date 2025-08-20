@@ -14,12 +14,8 @@ Power Off Options is a GNOME Shell extension that adds two additional buttons to
 ## Requirements
 
 - GNOME Shell;
-
-For powering off the screen:
-- X11 windowing system.
-
-For Hibernation:
-- hibernation enabled and configured in the system.
+- the screen off function only works in X11, Wayland is not supported;
+- Hibernation, Hybrid Sleep and Reboot related options make use of `systemctl` respective commands and must be enabled and configured in your system to work properly.
 
 ## Installation
 
