@@ -1,4 +1,5 @@
 import GLib from 'gi://GLib';
+import * as LoginManager from 'resource:///org/gnome/shell/misc/loginManager.js';
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
@@ -35,6 +36,7 @@ export default class PowerOffOptions extends Extension {
     }
 
     enable() {
+        this._loginManager = LoginManager.getLoginManager();
         this._deferredInitId = GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
             this._systemMenu = Main.panel.statusArea.quickSettings._system;
             if (!this._systemMenu)
@@ -49,19 +51,19 @@ export default class PowerOffOptions extends Extension {
                     shiftIf: [],
                 },
                 hybridSleep: {
-                    instance: new HybridSleepButton(this._systemMenu),
+                    instance: new HybridSleepButton(this._systemMenu, this._loginManager),
                     setting: 'show-hybrid-sleep',
                     defaultPosition: 1,
                     shiftIf: ['screenoff'],
                 },
                 suspendThenHibernate: {
-                    instance: new SuspendThenHibernateButton(this._systemMenu),
+                    instance: new SuspendThenHibernateButton(this._systemMenu, this._loginManager),
                     setting: 'show-suspend-then-hibernate',
                     defaultPosition: 1,
                     shiftIf: ['screenoff', 'hybridSleep'],
                 },
                 hibernate: {
-                    instance: new HibernationButton(this._systemMenu),
+                    instance: new HibernationButton(this._systemMenu, this._loginManager),
                     setting: 'show-hibernate',
                     defaultPosition: 1,
                     shiftIf: ['screenoff', 'hybridSleep', 'suspendThenHibernate'],
@@ -112,6 +114,7 @@ export default class PowerOffOptions extends Extension {
 
         this._systemMenu = null;
         this._settings = null;
+        this._loginManager = null;
     }
 
 }

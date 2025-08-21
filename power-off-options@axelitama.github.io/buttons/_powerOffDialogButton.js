@@ -1,12 +1,10 @@
-import GLib from 'gi://GLib';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
 export default class PowerOffDialogButton {
 
-    constructor(systemMenu, label, command) {
+    constructor(systemMenu, label) {
         this._systemMenu = systemMenu;
         this._label = label;
-        this._command = command;
 
         this._button = null;
         this._handler = null;
@@ -23,13 +21,10 @@ export default class PowerOffDialogButton {
     }
 
     _execute() {
-        GLib.spawn_async(
-            null,
-            this._command,
-            null,
-            GLib.SpawnFlags.SEARCH_PATH
-        );
+        // not implemented
+        throw new Error('Method _execute() must be implemented in subclass');
     }
+
 
     removeButton() {
         if (this._button) {
