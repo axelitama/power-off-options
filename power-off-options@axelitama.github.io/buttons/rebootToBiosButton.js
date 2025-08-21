@@ -1,18 +1,9 @@
-import PowerOffDialogButton from './_powerOffDialogButton.js';
+import CmdAsyncButton from './_cmdAsyncButton.js';
 
-export default class RebootToBiosButton extends PowerOffDialogButton {
+export default class RebootToBiosButton extends CmdAsyncButton {
 
     constructor(systemMenu) {
-        super(systemMenu, 'Restart to BIOS');
-    }
-
-    _execute() {
-        GLib.spawn_async(
-            null,
-            ['systemctl', 'reboot', '--firmware-setup'],
-            null,
-            GLib.SpawnFlags.SEARCH_PATH
-        );
+        super(systemMenu, 'Restart to BIOS', ['systemctl', 'reboot', '--firmware-setup']);
     }
 
 }

@@ -1,6 +1,6 @@
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
-export default class PowerOffDialogButton {
+export default class Button {
 
     constructor(systemMenu, label) {
         this._systemMenu = systemMenu;
@@ -38,6 +38,7 @@ export default class PowerOffDialogButton {
     destroy() {
         this.removeButton();
         this._systemMenu = null;
+        this._label = null;
     }
     
 }

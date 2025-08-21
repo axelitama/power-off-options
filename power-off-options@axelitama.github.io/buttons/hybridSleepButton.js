@@ -1,28 +1,9 @@
-import Gio from 'gi://Gio';
-import GLib from 'gi://GLib';
+import LoginManagerButton from './_loginManagerButton.js';
 
-import PowerOffDialogButton from './_powerOffDialogButton.js';
-
-export default class HybridSleepButton extends PowerOffDialogButton {
+export default class HybridSleepButton extends LoginManagerButton {
 
     constructor(systemMenu, loginManager) {
-        super(systemMenu, 'Hybrid Sleep');
-        this._loginManager = loginManager;
+        super(systemMenu, 'Hybrid Sleep', loginManager, 'HybridSleep');
     }
 
-    _execute() {
-        if(!this._loginManager._proxy) {
-            return;
-        }
-
-        this._loginManager._proxy.call(
-            'HybridSleep',
-            GLib.Variant.new('(b)', [true]),
-            Gio.DBusCallFlags.NONE,
-            -1,
-            null,
-            null
-        );
-    }
-    
 }

@@ -1,20 +1,9 @@
-import GLib from 'gi://GLib';
+import CmdAsyncButton from './_cmdAsyncButton.js';
 
-import PowerOffDialogButton from './_powerOffDialogButton.js';
-
-export default class ScreenOffButton extends PowerOffDialogButton {
+export default class ScreenOffButton extends CmdAsyncButton {
 
     constructor(systemMenu) {
-        super(systemMenu, 'Turn Off Screen');
-    }
-
-    _execute() {
-        GLib.spawn_async(
-            null,
-            ['xset', 'dpms', 'force', 'off'],
-            null,
-            GLib.SpawnFlags.SEARCH_PATH
-        );
+        super(systemMenu, 'Turn Off Screen', ['xset', 'dpms', 'force', 'off']);
     }
 
 }
