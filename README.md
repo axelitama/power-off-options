@@ -1,6 +1,6 @@
 # Power Off Options
 
-Power Off Options is a GNOME Shell extension that adds two additional buttons to the Power Off dialog:
+Power Off Options is a GNOME Shell extension that adds additional buttons to the Power Off dialog:
 
 - **Turn Off Screen** — Immediately turn off the monitor/display.
 - **Hybrid Sleep** — Suspend to RAM and also save system state to disk (safe on power loss).
