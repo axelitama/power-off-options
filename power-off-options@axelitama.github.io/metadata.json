@@ -4,5 +4,6 @@
     "description": "Adds extra options such as 'Turn Off Screen', 'Hibernate', 'Hybrid Sleep', and more to the GNOME Power Off dialog.",
     "shell-version": ["48", "49"],
     "url": "https://github.com/axelitama/power-off-options",
+    "gettext-domain": "power-off-options@axelitama.github.io",
     "settings-schema": "org.gnome.shell.extensions.power-off-options"
 }

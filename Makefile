@@ -16,10 +16,18 @@ uninstall:
 build: clean
 	@echo "Compiling schemas..."
 	glib-compile-schemas $(SRC_DIR)/schemas/
+	@echo "Compiling translations (.po to .mo)..."
+	find "$(SRC_DIR)/locale" -name '*.po' | while read -r po; do \
+		mo="$${po%.po}.mo"; \
+		echo "  -> $$po"; \
+		msgfmt "$$po" -o "$$mo"; \
+	done
 
 clean:
 	@echo "Removing compiled schemas..."
 	rm -f $(SRC_DIR)/schemas/gschemas.compiled
+	@echo "Removing compiled translations (.mo)..."
+	find "$(SRC_DIR)/locale" -name '*.mo' -type f -delete
 
 zip: clean
 	@echo "Creating zip archive $(ZIP_NAME)..."

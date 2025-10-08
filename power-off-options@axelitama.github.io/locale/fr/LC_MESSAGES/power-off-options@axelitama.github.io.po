@@ -1,0 +1,114 @@
+# French translations for power-off-options GNOME Shell extension
+# Copyright (C) 2025 axelitama
+# This file is distributed under the same license as the extension package.
+# cvlc12 <cvlc12@outlook.fr>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: power-off-options\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 02:06+0200\n"
+"PO-Revision-Date: 2025-10-08 19:18+0200\n"
+"Last-Translator: cvlc12 <cvlc12@outlook.fr>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-DL-Lang: Français\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: prefs.js:10
+msgid "General"
+msgstr "Général"
+
+#: prefs.js:17
+msgid "Power Off Options"
+msgstr "Options d’arrêt"
+
+#: prefs.js:19
+msgid ""
+"Choose which options to show in the Power Off dialog.\n"
+"\n"
+"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
+"not supported.\n"
+"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
+"of 'systemctl' respective commands and must be enabled and configured in "
+"your system to work properly.\n"
+msgstr ""
+"Choisissez les options à afficher dans la boîte de dialogue d’arrêt.\n"
+"\n"
+"<b>Remarque :</b> La fonction « Éteindre l’écran » ne fonctionne que sous "
+"X11 ; Wayland n’est pas pris en charge.\n"
+"<b>Remarque :</b> Les options d’hibernation, de veille hybride et de "
+"redémarrage utilisent les commandes « systemctl » correspondantes et doivent "
+"être activées et configurées dans votre système pour fonctionner "
+"correctement.\n"
+
+#: prefs.js:28
+msgid "Turn Screen Off"
+msgstr "Éteindre l’écran"
+
+#: prefs.js:29
+msgid "Immediately turn off the monitor/display."
+msgstr "Éteint immédiatement le moniteur/l’écran."
+
+#: prefs.js:35
+msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
+msgstr ""
+"Met en veille et enregistre aussi l’état du système sur le disque (sécurisé "
+"en cas de coupure de courant)."
+
+#: prefs.js:40
+msgid "Suspend Then Hibernate"
+msgstr "Mettre en veille, puis hiberner"
+
+#: prefs.js:41
+msgid "Suspend the system and automatically hibernate after a timeout."
+msgstr "Met en veille puis hiberne automatiquement après un délai."
+
+#: prefs.js:47
+msgid ""
+"Save system state to disk and power off (slower to resume than suspend)."
+msgstr ""
+"Enregistre l’état du système sur le disque et éteint l’ordinateur (plus lent "
+"à reprendre que la veille)."
+
+#: prefs.js:53
+msgid "Restart the user space without rebooting the entire system."
+msgstr ""
+"Redémarre l’espace utilisateur sans redémarrer entièrement le système (soft-"
+"reboot)."
+
+#: prefs.js:58
+msgid "Restart To BIOS"
+msgstr "Redémarrer vers UEFI"
+
+#: prefs.js:59
+msgid "Reboot directly into the system firmware/BIOS setup."
+msgstr "Redémarre directement dans le micrologiciel UEFI du système."
+
+#: buttons/hibernationButton.js:7
+msgid "Hibernate"
+msgstr "Hiberner"
+
+#: buttons/hybridSleepButton.js:7
+msgid "Hybrid Sleep"
+msgstr "Mettre en veille hybride"
+
+#: buttons/rebootToBiosButton.js:7
+msgid "Restart to BIOS"
+msgstr "Redémarrer vers UEFI"
+
+#: buttons/screenOffButton.js:7
+msgid "Turn Off Screen"
+msgstr "Éteindre l’écran"
+
+#: buttons/softRebootButton.js:7
+msgid "Restart user space (Soft Reboot)"
+msgstr "Redémarrer l’espace utilisateur"
+
+#: buttons/suspendThenHibernateButton.js:7
+msgid "Suspend then Hibernate"
+msgstr "Mettre en veille, puis hiberner"
