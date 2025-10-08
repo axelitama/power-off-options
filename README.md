@@ -46,5 +46,3 @@ gnome-extensions prefs power-off-options@axelitama.github.io
 ```
 
 The same window is also accessible from the **GNOME Extensions** application.
-
-You 
