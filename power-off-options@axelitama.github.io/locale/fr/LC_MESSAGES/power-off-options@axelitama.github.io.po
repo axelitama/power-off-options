@@ -1,5 +1,5 @@
 # French translations for power-off-options GNOME Shell extension
-# Copyright (C) 2025
+# Copyright (C) 2025 axelitama
 # This file is distributed under the same license as the extension package.
 # cvlc12 <cvlc12@outlook.fr>, 2025.
 #
