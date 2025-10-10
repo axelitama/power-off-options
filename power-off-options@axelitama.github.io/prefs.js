@@ -1,10 +1,13 @@
 import Adw from 'gi://Adw';
 import Gio from 'gi://Gio';
 import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
+import {CustomCommandsManager} from './customButtonsManager.js';
 
 export default class ExamplePreferences extends ExtensionPreferences {
 
     fillPreferencesWindow(window) {
+        const settings = this.getSettings();
+
         // Preferences page
         const page = new Adw.PreferencesPage({
             title: _('General'),
@@ -61,13 +64,15 @@ export default class ExamplePreferences extends ExtensionPreferences {
         group.add(rebootToBiosRow);
 
         // Bind settings
-        window._settings = this.getSettings();
-        window._settings.bind('show-screenoff', screenOffRow, 'active', Gio.SettingsBindFlags.DEFAULT);
-        window._settings.bind('show-hybrid-sleep', hybridSleepRow, 'active', Gio.SettingsBindFlags.DEFAULT);
-        window._settings.bind('show-suspend-then-hibernate', suspendThenHibernateRow, 'active', Gio.SettingsBindFlags.DEFAULT);
-        window._settings.bind('show-hibernate', hibernateRow, 'active', Gio.SettingsBindFlags.DEFAULT);
-        window._settings.bind('show-soft-reboot', softRebootRow, 'active', Gio.SettingsBindFlags.DEFAULT);
-        window._settings.bind('show-reboot-to-bios', rebootToBiosRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        settings.bind('show-screenoff', screenOffRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        settings.bind('show-hybrid-sleep', hybridSleepRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        settings.bind('show-suspend-then-hibernate', suspendThenHibernateRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        settings.bind('show-hibernate', hibernateRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        settings.bind('show-soft-reboot', softRebootRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        settings.bind('show-reboot-to-bios', rebootToBiosRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        
+        const customCommandsGroup = new CustomCommandsManager(settings);
+        page.add(customCommandsGroup);
     }
 
 }

@@ -1,0 +1,151 @@
+# Russian translations for power-off-options GNOME Shell extension
+# Copyright (C) 2025 axelitama
+# This file is distributed under the same license as the extension package.
+# furik30 <furik@krv.li>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: power-off-options\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-10 01:59+0300\n"
+"PO-Revision-Date: 2025-10-10 02:25+0300\n"
+"Last-Translator: furik30 <furik@krv.li>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: buttons/hibernationButton.js:7 prefs.js:49
+msgid "Hibernate"
+msgstr "Гибернация"
+
+#: buttons/hybridSleepButton.js:7 prefs.js:37
+msgid "Hybrid Sleep"
+msgstr "Гибридный сон"
+
+#: buttons/rebootToBiosButton.js:7
+msgid "Restart to BIOS"
+msgstr "Перезагрузка в BIOS"
+
+#: buttons/screenOffButton.js:7
+msgid "Turn Off Screen"
+msgstr "Выключить экран"
+
+#: buttons/softRebootButton.js:7
+#: prefs.js:55
+msgid "Restart user space (Soft Reboot)"
+msgstr "Мягкий Перезапуск"
+
+#: buttons/suspendThenHibernateButton.js:7
+msgid "Suspend then Hibernate"
+msgstr "Сон, затем гибернация"
+
+#: prefs.js:13
+msgid "General"
+msgstr "Общие"
+
+#: prefs.js:20
+msgid "Power Off Options"
+msgstr "Параметры выключения"
+
+#: prefs.js:22
+msgid ""
+"Choose which options to show in the Power Off dialog.\n"
+"\n"
+"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
+"not supported.\n"
+"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
+"of 'systemctl' respective commands and must be enabled and configured in "
+"your system to work properly.\n"
+msgstr ""
+"Выберите, какие параметры показывать в диалоге выключения.\n"
+"\n"
+"<b>Примечание:</b> Функция «Выключить экран» работает только в X11; Wayland не "
+"поддерживается.\n"
+"<b>Примечание:</b> Гибернация, гибридный сон и параметры перезагрузки используют "
+"соответствующие команды «systemctl» и должны быть включены и настроены в "
+"вашей системе для корректной работы.\n"
+
+#: prefs.js:31
+msgid "Turn Screen Off"
+msgstr "Выключить экран"
+
+#: prefs.js:32
+msgid "Immediately turn off the monitor/display."
+msgstr "Немедленно выключает монитор/дисплей."
+
+#: prefs.js:38
+msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
+msgstr "Переводит в сон и сохраняет состояние системы на диск (безопасно при потере питания)."
+
+#: prefs.js:43
+msgid "Suspend Then Hibernate"
+msgstr "Сон, затем гибернация"
+
+#: prefs.js:44
+msgid "Suspend the system and automatically hibernate after a timeout."
+msgstr "Переводит систему в сон и автоматически включает гибернацию по таймауту."
+
+#: prefs.js:50
+msgid ""
+"Save system state to disk and power off (slower to resume than suspend)."
+msgstr ""
+"Сохраняет состояние системы на диск и выключает компьютер (медленнее восстанавливается, чем сон)."
+
+#: prefs.js:56
+msgid "Restart the user space without rebooting the entire system."
+msgstr "Перезапускает пользовательское пространство без перезагрузки всей системы."
+
+#: prefs.js:61
+msgid "Restart To BIOS"
+msgstr "Перезагрузка в BIOS"
+
+#: prefs.js:62
+msgid "Reboot directly into the system firmware/BIOS setup."
+msgstr "Перезагружает непосредственно в настройку firmware/BIOS системы."
+
+#: customButtonsManager.js:15
+msgid "Custom Commands"
+msgstr "Пользовательские команды"
+
+#: customButtonsManager.js:16
+msgid "Manage your custom entries for the power menu."
+msgstr "Управление вашими пользовательскими элементами меню питания."
+
+#: customButtonsManager.js:43
+msgid "Add New Command..."
+msgstr "Добавить команду..."
+
+#: customButtonsManager.js:95
+msgid "Name"
+msgstr "Название"
+
+#: customButtonsManager.js:96
+msgid "Command"
+msgstr "Команда"
+
+#: customButtonsManager.js:104
+msgid "Delete"
+msgstr "Удалить"
+
+#: customButtonsManager.js:107
+msgid "Cancel"
+msgstr "Отмена"
+
+#: customButtonsManager.js:108
+msgid "Save"
+msgstr "Сохранить"
+
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr "Позиция"
+
+#: customButtonsManager.js:67
+msgid "at the end"
+msgstr "в конце"
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
+msgstr "Позиция (0 = в конце)"
