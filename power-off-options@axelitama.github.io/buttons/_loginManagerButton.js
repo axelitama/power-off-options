@@ -13,8 +13,7 @@ export default class LoginManagerButton extends Button {
         flags = Gio.DBusCallFlags.NONE,
         timeout_msec = 0,
         cancellable = null,
-        callback = null,
-        user_data = null
+        callback = null
     ) {
         super(systemMenu, label);
 
@@ -25,7 +24,6 @@ export default class LoginManagerButton extends Button {
         this._timeout_msec = timeout_msec;
         this._cancellable = cancellable;
         this._callback = callback;
-        this._user_data = user_data;
     }
 
     _execute() {
@@ -41,7 +39,6 @@ export default class LoginManagerButton extends Button {
             this._timeout_msec,
             this._cancellable,
             this._callback,
-            this._user_data
         );
     }
 
@@ -54,7 +51,6 @@ export default class LoginManagerButton extends Button {
         this._timeout_msec = null;
         this._cancellable = null;
         this._callback = null;
-        this._user_data = null;
     }
 
 }
