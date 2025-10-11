@@ -118,6 +118,14 @@ msgstr "Управление вашими пользовательскими э�
 msgid "Add New Command..."
 msgstr "Добавить команду..."
 
+#: customButtonsManager.js:66
+msgid "at the end"
+msgstr "в конце"
+
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr "Позиция"
+
 #: customButtonsManager.js:95
 msgid "Name"
 msgstr "Название"
@@ -125,6 +133,10 @@ msgstr "Название"
 #: customButtonsManager.js:96
 msgid "Command"
 msgstr "Команда"
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
+msgstr "Позиция (0 = в конце)"
 
 #: customButtonsManager.js:104
 msgid "Delete"
@@ -137,15 +149,3 @@ msgstr "Отмена"
 #: customButtonsManager.js:108
 msgid "Save"
 msgstr "Сохранить"
-
-#: customButtonsManager.js:67
-msgid "Position"
-msgstr "Позиция"
-
-#: customButtonsManager.js:67
-msgid "at the end"
-msgstr "в конце"
-
-#: customButtonsManager.js:98
-msgid "Position (0 = at the end)"
-msgstr "Позиция (0 = в конце)"

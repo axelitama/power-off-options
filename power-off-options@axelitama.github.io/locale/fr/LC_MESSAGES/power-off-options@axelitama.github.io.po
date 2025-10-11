@@ -128,6 +128,14 @@ msgstr "Gérer vos entrées personnalisées pour le menu d'alimentation."
 msgid "Add New Command..."
 msgstr "Ajouter une commande..."
 
+#: customButtonsManager.js:66
+msgid "at the end"
+msgstr "à la fin"
+
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr "Position"
+
 #: customButtonsManager.js:95
 msgid "Name"
 msgstr "Nom"
@@ -135,6 +143,10 @@ msgstr "Nom"
 #: customButtonsManager.js:96
 msgid "Command"
 msgstr "Commande"
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
+msgstr "Position (0 = à la fin)"
 
 #: customButtonsManager.js:104
 msgid "Delete"
@@ -147,15 +159,3 @@ msgstr "Annuler"
 #: customButtonsManager.js:108
 msgid "Save"
 msgstr "Enregistrer"
-
-#: customButtonsManager.js:67
-msgid "Position"
-msgstr "Position"
-
-#: customButtonsManager.js:67
-msgid "at the end"
-msgstr "à la fin"
-
-#: customButtonsManager.js:98
-msgid "Position (0 = at the end)"
-msgstr "Position (0 = à la fin)"

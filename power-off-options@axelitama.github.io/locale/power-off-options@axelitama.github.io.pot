@@ -112,12 +112,24 @@ msgstr ""
 msgid "Add New Command..."
 msgstr ""
 
+#: customButtonsManager.js:66
+msgid "at the end"
+msgstr ""
+
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr ""
+
 #: customButtonsManager.js:95
 msgid "Name"
 msgstr ""
 
 #: customButtonsManager.js:96
 msgid "Command"
+msgstr ""
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
 msgstr ""
 
 #: customButtonsManager.js:104
@@ -130,16 +142,4 @@ msgstr ""
 
 #: customButtonsManager.js:108
 msgid "Save"
-msgstr ""
-
-#: customButtonsManager.js:67
-msgid "Position"
-msgstr ""
-
-#: customButtonsManager.js:67
-msgid "at the end"
-msgstr ""
-
-#: customButtonsManager.js:98
-msgid "Position (0 = at the end)"
 msgstr ""
