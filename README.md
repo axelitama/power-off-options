@@ -1,6 +1,6 @@
 # Power Off Options
 
-[RU](resources/README_ru.md)
+[RU](READMEs/README_ru.md)
 
 Power Off Options is a GNOME Shell extension that adds additional buttons to the Power Off dialog:
 
