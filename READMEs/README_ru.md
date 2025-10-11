@@ -11,8 +11,8 @@ Power Off Options — это расширение GNOME Shell, которое д
 - **Пользовательские команды** — Добавьте свои собственные команды в меню питания.
 
 <p align="center">
-  <img src="ru1.png"/>
-  <img src="ru2.png"/>
+  <img src="../resources/ru1.png"/>
+  <img src="../resources/ru2.png"/>
 </p>
 
 ## Требования
