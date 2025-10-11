@@ -25,6 +25,11 @@
         <key name="show-reboot-to-bios" type="b">
             <default>false</default>
         </key>
+
+        <!-- A JSON array of custom command objects -->
+        <key name="custom-commands" type="s">
+            <default>'[]'</default>
+        </key>
         
     </schema>
 </schemalist>

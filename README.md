@@ -1,5 +1,7 @@
 # Power Off Options
 
+[RU](resources/README_ru.md)
+
 Power Off Options is a GNOME Shell extension that adds additional buttons to the Power Off dialog:
 
 - **Turn Off Screen** — Immediately turn off the monitor/display.
@@ -8,10 +10,11 @@ Power Off Options is a GNOME Shell extension that adds additional buttons to the
 - **Hibernate** — Save system state to disk and power off (slower to resume than suspend).
 - **Restart user space (Soft Reboot)** — Restart the user space without rebooting the entire system.
 - **Restart To BIOS** — Reboot directly into the system BIOS setup.
-
+- **Custom Commands** — Add your own custom commands through the preferences window. Custom commands allow you to add your own entries to the power menu with any shell command you want to execute.
 
 <p align="center">
-  <img src="resources/screenshot.png" alt="screenshot"/>
+  <img src="resources/en1.png" alt="screenshot1"/>
+  <img src="resources/en2.png" alt="screenshot2"/>
 </p>
 
 

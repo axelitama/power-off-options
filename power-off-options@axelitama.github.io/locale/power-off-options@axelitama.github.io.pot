@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 02:06+0200\n"
+"POT-Creation-Date: 2025-10-10 01:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,67 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: prefs.js:10
-msgid "General"
-msgstr ""
-
-#: prefs.js:17
-msgid "Power Off Options"
-msgstr ""
-
-#: prefs.js:19
-msgid ""
-"Choose which options to show in the Power Off dialog.\n"
-"\n"
-"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
-"not supported.\n"
-"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
-"of 'systemctl' respective commands and must be enabled and configured in "
-"your system to work properly.\n"
-msgstr ""
-
-#: prefs.js:28
-msgid "Turn Screen Off"
-msgstr ""
-
-#: prefs.js:29
-msgid "Immediately turn off the monitor/display."
-msgstr ""
-
-#: prefs.js:35
-msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
-msgstr ""
-
-#: prefs.js:40
-msgid "Suspend Then Hibernate"
-msgstr ""
-
-#: prefs.js:41
-msgid "Suspend the system and automatically hibernate after a timeout."
-msgstr ""
-
-#: prefs.js:47
-msgid ""
-"Save system state to disk and power off (slower to resume than suspend)."
-msgstr ""
-
-#: prefs.js:53
-msgid "Restart the user space without rebooting the entire system."
-msgstr ""
-
-#: prefs.js:58
-msgid "Restart To BIOS"
-msgstr ""
-
-#: prefs.js:59
-msgid "Reboot directly into the system firmware/BIOS setup."
-msgstr ""
-
 #: buttons/hibernationButton.js:7
+#: prefs.js:49
 msgid "Hibernate"
 msgstr ""
 
 #: buttons/hybridSleepButton.js:7
+#: prefs.js:37
 msgid "Hybrid Sleep"
 msgstr ""
 
@@ -90,9 +36,110 @@ msgid "Turn Off Screen"
 msgstr ""
 
 #: buttons/softRebootButton.js:7
+#: prefs.js:55
 msgid "Restart user space (Soft Reboot)"
 msgstr ""
 
 #: buttons/suspendThenHibernateButton.js:7
 msgid "Suspend then Hibernate"
+msgstr ""
+
+#: prefs.js:13
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+msgid "Power Off Options"
+msgstr ""
+
+#: prefs.js:22
+msgid ""
+"Choose which options to show in the Power Off dialog.\n"
+"\n"
+"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
+"not supported.\n"
+"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
+"of 'systemctl' respective commands and must be enabled and configured in "
+"your system to work properly.\n"
+msgstr ""
+
+#: prefs.js:31
+msgid "Turn Screen Off"
+msgstr ""
+
+#: prefs.js:32
+msgid "Immediately turn off the monitor/display."
+msgstr ""
+
+#: prefs.js:38
+msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
+msgstr ""
+
+#: prefs.js:43
+msgid "Suspend Then Hibernate"
+msgstr ""
+
+#: prefs.js:44
+msgid "Suspend the system and automatically hibernate after a timeout."
+msgstr ""
+
+#: prefs.js:50
+msgid ""
+"Save system state to disk and power off (slower to resume than suspend)."
+msgstr ""
+
+#: prefs.js:56
+msgid "Restart the user space without rebooting the entire system."
+msgstr ""
+
+#: prefs.js:61
+msgid "Restart To BIOS"
+msgstr ""
+
+#: prefs.js:62
+msgid "Reboot directly into the system firmware/BIOS setup."
+msgstr ""
+
+#: customButtonsManager.js:15
+msgid "Custom Commands"
+msgstr ""
+
+#: customButtonsManager.js:16
+msgid "Manage your custom entries for the power menu."
+msgstr ""
+
+#: customButtonsManager.js:43
+msgid "Add New Command..."
+msgstr ""
+
+#: customButtonsManager.js:66
+msgid "at the end"
+msgstr ""
+
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr ""
+
+#: customButtonsManager.js:95
+msgid "Name"
+msgstr ""
+
+#: customButtonsManager.js:96
+msgid "Command"
+msgstr ""
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
+msgstr ""
+
+#: customButtonsManager.js:104
+msgid "Delete"
+msgstr ""
+
+#: customButtonsManager.js:107
+msgid "Cancel"
+msgstr ""
+
+#: customButtonsManager.js:108
+msgid "Save"
 msgstr ""

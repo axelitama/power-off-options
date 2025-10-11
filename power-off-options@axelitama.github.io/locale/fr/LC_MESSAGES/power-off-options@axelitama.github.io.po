@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 02:06+0200\n"
-"PO-Revision-Date: 2025-10-08 19:18+0200\n"
-"Last-Translator: cvlc12 <cvlc12@outlook.fr>\n"
+"POT-Creation-Date: 2025-10-10 01:59+0300\n"
+"PO-Revision-Date: 2025-10-10 02:18+0300\n"
+"Last-Translator: furik30 <furik@krv.li>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -19,15 +19,42 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Gtranslator 49.0\n"
 
-#: prefs.js:10
+#: buttons/hibernationButton.js:7
+#: prefs.js:49
+msgid "Hibernate"
+msgstr "Hiberner"
+
+#: buttons/hybridSleepButton.js:7
+#: prefs.js:37
+msgid "Hybrid Sleep"
+msgstr "Mettre en veille hybride"
+
+#: buttons/rebootToBiosButton.js:7
+msgid "Restart to BIOS"
+msgstr "Redémarrer vers UEFI"
+
+#: buttons/screenOffButton.js:7
+msgid "Turn Off Screen"
+msgstr "Éteindre l’écran"
+
+#: buttons/softRebootButton.js:7
+#: prefs.js:55
+msgid "Restart user space (Soft Reboot)"
+msgstr "Redémarrer l’espace utilisateur (Redémarrage logiciel)"
+
+#: buttons/suspendThenHibernateButton.js:7
+msgid "Suspend then Hibernate"
+msgstr "Mettre en veille, puis hiberner"
+
+#: prefs.js:13
 msgid "General"
 msgstr "Général"
 
-#: prefs.js:17
+#: prefs.js:20
 msgid "Power Off Options"
 msgstr "Options d’arrêt"
 
-#: prefs.js:19
+#: prefs.js:22
 msgid ""
 "Choose which options to show in the Power Off dialog.\n"
 "\n"
@@ -46,69 +73,89 @@ msgstr ""
 "être activées et configurées dans votre système pour fonctionner "
 "correctement.\n"
 
-#: prefs.js:28
+#: prefs.js:31
 msgid "Turn Screen Off"
 msgstr "Éteindre l’écran"
 
-#: prefs.js:29
+#: prefs.js:32
 msgid "Immediately turn off the monitor/display."
 msgstr "Éteint immédiatement le moniteur/l’écran."
 
-#: prefs.js:35
+#: prefs.js:38
 msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
 msgstr ""
 "Met en veille et enregistre aussi l’état du système sur le disque (sécurisé "
 "en cas de coupure de courant)."
 
-#: prefs.js:40
+#: prefs.js:43
 msgid "Suspend Then Hibernate"
 msgstr "Mettre en veille, puis hiberner"
 
-#: prefs.js:41
+#: prefs.js:44
 msgid "Suspend the system and automatically hibernate after a timeout."
 msgstr "Met en veille puis hiberne automatiquement après un délai."
 
-#: prefs.js:47
+#: prefs.js:50
 msgid ""
 "Save system state to disk and power off (slower to resume than suspend)."
 msgstr ""
 "Enregistre l’état du système sur le disque et éteint l’ordinateur (plus lent "
 "à reprendre que la veille)."
 
-#: prefs.js:53
+#: prefs.js:56
 msgid "Restart the user space without rebooting the entire system."
 msgstr ""
 "Redémarre l’espace utilisateur sans redémarrer entièrement le système (soft-"
 "reboot)."
 
-#: prefs.js:58
+#: prefs.js:61
 msgid "Restart To BIOS"
 msgstr "Redémarrer vers UEFI"
 
-#: prefs.js:59
+#: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr "Redémarre directement dans le micrologiciel UEFI du système."
 
-#: buttons/hibernationButton.js:7
-msgid "Hibernate"
-msgstr "Hiberner"
+#: customButtonsManager.js:15
+msgid "Custom Commands"
+msgstr "Commandes personnalisées"
 
-#: buttons/hybridSleepButton.js:7
-msgid "Hybrid Sleep"
-msgstr "Mettre en veille hybride"
+#: customButtonsManager.js:16
+msgid "Manage your custom entries for the power menu."
+msgstr "Gérer vos entrées personnalisées pour le menu d'alimentation."
 
-#: buttons/rebootToBiosButton.js:7
-msgid "Restart to BIOS"
-msgstr "Redémarrer vers UEFI"
+#: customButtonsManager.js:43
+msgid "Add New Command..."
+msgstr "Ajouter une commande..."
 
-#: buttons/screenOffButton.js:7
-msgid "Turn Off Screen"
-msgstr "Éteindre l’écran"
+#: customButtonsManager.js:66
+msgid "at the end"
+msgstr "à la fin"
 
-#: buttons/softRebootButton.js:7
-msgid "Restart user space (Soft Reboot)"
-msgstr "Redémarrer l’espace utilisateur"
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr "Position"
 
-#: buttons/suspendThenHibernateButton.js:7
-msgid "Suspend then Hibernate"
-msgstr "Mettre en veille, puis hiberner"
+#: customButtonsManager.js:95
+msgid "Name"
+msgstr "Nom"
+
+#: customButtonsManager.js:96
+msgid "Command"
+msgstr "Commande"
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
+msgstr "Position (0 = à la fin)"
+
+#: customButtonsManager.js:104
+msgid "Delete"
+msgstr "Supprimer"
+
+#: customButtonsManager.js:107
+msgid "Cancel"
+msgstr "Annuler"
+
+#: customButtonsManager.js:108
+msgid "Save"
+msgstr "Enregistrer"
