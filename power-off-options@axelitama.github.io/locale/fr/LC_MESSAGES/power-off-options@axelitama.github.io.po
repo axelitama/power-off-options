@@ -149,6 +149,10 @@ msgid "Save"
 msgstr "Enregistrer"
 
 #: customButtonsManager.js:67
+msgid "Position"
+msgstr "Position"
+
+#: customButtonsManager.js:67
 msgid "at the end"
 msgstr "à la fin"
 

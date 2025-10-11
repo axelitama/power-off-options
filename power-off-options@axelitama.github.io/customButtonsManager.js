@@ -64,7 +64,7 @@ class CustomCommandsManager extends Adw.PreferencesGroup {
     _createCommandRow(command) {
         const positionText = command.position === 0
             ? _('at the end')
-            : _('Position %d').format(command.position);
+            : `${_('Position')} ${command.position}`;
         const row = new Adw.ActionRow({
             title: command.name,
             subtitle: `${command.command} (${positionText})`,

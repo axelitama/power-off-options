@@ -141,5 +141,5 @@ msgid "at the end"
 msgstr ""
 
 #: customButtonsManager.js:98
-msgid "Position (at the end)"
+msgid "Position (0 = at the end)"
 msgstr ""
