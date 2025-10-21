@@ -1,14 +1,14 @@
-# Translation template for power-off-options GNOME extension
+# Translation template for power-off-options GNOME Shell extension
 # Copyright (C) 2025 axelitama
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# axelitama, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-10 01:59+0300\n"
+"POT-Creation-Date: 2025-10-21 23:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,94 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: buttons/hibernationButton.js:7
-#: prefs.js:49
-msgid "Hibernate"
-msgstr ""
-
-#: buttons/hybridSleepButton.js:7
-#: prefs.js:37
-msgid "Hybrid Sleep"
-msgstr ""
-
-#: buttons/rebootToBiosButton.js:7
-msgid "Restart to BIOS"
-msgstr ""
-
-#: buttons/screenOffButton.js:7
-msgid "Turn Off Screen"
-msgstr ""
-
-#: buttons/softRebootButton.js:7
-#: prefs.js:55
-msgid "Restart user space (Soft Reboot)"
-msgstr ""
-
-#: buttons/suspendThenHibernateButton.js:7
-msgid "Suspend then Hibernate"
-msgstr ""
-
-#: prefs.js:13
-msgid "General"
-msgstr ""
-
-#: prefs.js:20
-msgid "Power Off Options"
-msgstr ""
-
-#: prefs.js:22
-msgid ""
-"Choose which options to show in the Power Off dialog.\n"
-"\n"
-"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
-"not supported.\n"
-"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
-"of 'systemctl' respective commands and must be enabled and configured in "
-"your system to work properly.\n"
-msgstr ""
-
-#: prefs.js:31
-msgid "Turn Screen Off"
-msgstr ""
-
-#: prefs.js:32
-msgid "Immediately turn off the monitor/display."
-msgstr ""
-
-#: prefs.js:38
-msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
-msgstr ""
-
-#: prefs.js:43
-msgid "Suspend Then Hibernate"
-msgstr ""
-
-#: prefs.js:44
-msgid "Suspend the system and automatically hibernate after a timeout."
-msgstr ""
-
-#: prefs.js:50
-msgid ""
-"Save system state to disk and power off (slower to resume than suspend)."
-msgstr ""
-
-#: prefs.js:56
-msgid "Restart the user space without rebooting the entire system."
-msgstr ""
-
-#: prefs.js:61
-msgid "Restart To BIOS"
-msgstr ""
-
-#: prefs.js:62
-msgid "Reboot directly into the system firmware/BIOS setup."
-msgstr ""
-
-#: customButtonsManager.js:15
+#: customButtonsManager.js:10
 msgid "Custom Commands"
 msgstr ""
 
-#: customButtonsManager.js:16
+#: customButtonsManager.js:11
 msgid "Manage your custom entries for the power menu."
 msgstr ""
 
@@ -142,4 +59,72 @@ msgstr ""
 
 #: customButtonsManager.js:108
 msgid "Save"
+msgstr ""
+
+#: prefs.js:13
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+msgid "Power Off Options"
+msgstr ""
+
+#: prefs.js:22
+msgid ""
+"Choose which options to show in the Power Off dialog.\n"
+"\n"
+"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
+"not supported.\n"
+"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
+"of 'systemctl' respective commands and must be enabled and configured in "
+"your system to work properly.\n"
+msgstr ""
+
+#: prefs.js:31 buttons/screenOffButton.js:7
+msgid "Turn Off Screen"
+msgstr ""
+
+#: prefs.js:32
+msgid "Immediately turn off the monitor/display."
+msgstr ""
+
+#: prefs.js:37 buttons/hybridSleepButton.js:7
+msgid "Hybrid Sleep"
+msgstr ""
+
+#: prefs.js:38
+msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
+msgstr ""
+
+#: prefs.js:43 buttons/suspendThenHibernateButton.js:7
+msgid "Suspend then Hibernate"
+msgstr ""
+
+#: prefs.js:44
+msgid "Suspend the system and automatically hibernate after a timeout."
+msgstr ""
+
+#: prefs.js:49 buttons/hibernationButton.js:7
+msgid "Hibernate"
+msgstr ""
+
+#: prefs.js:50
+msgid ""
+"Save system state to disk and power off (slower to resume than suspend)."
+msgstr ""
+
+#: prefs.js:55 buttons/softRebootButton.js:7
+msgid "Restart user space (Soft Reboot)"
+msgstr ""
+
+#: prefs.js:56
+msgid "Restart the user space without rebooting the entire system."
+msgstr ""
+
+#: prefs.js:61 buttons/rebootToBiosButton.js:7
+msgid "Restart to BIOS"
+msgstr ""
+
+#: prefs.js:62
+msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr ""

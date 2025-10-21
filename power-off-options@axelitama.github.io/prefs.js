@@ -28,7 +28,7 @@ export default class ExamplePreferences extends ExtensionPreferences {
 
         // Rows with simple descriptions
         const screenOffRow = new Adw.SwitchRow({
-            title: _('Turn Screen Off'),
+            title: _('Turn Off Screen'),
             subtitle: _('Immediately turn off the monitor/display.'),
         });
         group.add(screenOffRow);
@@ -40,7 +40,7 @@ export default class ExamplePreferences extends ExtensionPreferences {
         group.add(hybridSleepRow);
 
         const suspendThenHibernateRow = new Adw.SwitchRow({
-            title: _('Suspend Then Hibernate'),
+            title: _('Suspend then Hibernate'),
             subtitle: _('Suspend the system and automatically hibernate after a timeout.'),
         });
         group.add(suspendThenHibernateRow);
@@ -58,7 +58,7 @@ export default class ExamplePreferences extends ExtensionPreferences {
         group.add(softRebootRow);
 
         const rebootToBiosRow = new Adw.SwitchRow({
-            title: _('Restart To BIOS'),
+            title: _('Restart to BIOS'),
             subtitle: _('Reboot directly into the system firmware/BIOS setup.'),
         });
         group.add(rebootToBiosRow);

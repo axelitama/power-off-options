@@ -1,7 +1,7 @@
-# French translations for power-off-options GNOME Shell extension
+# Italian translation for power-off-options GNOME Shell extension
 # Copyright (C) 2025 axelitama
-# This file is distributed under the same license as the extension package.
-# cvlc12 <cvlc12@outlook.fr>, 2025.
+# This file is distributed under the same license as the PACKAGE package.
+# axelitama, 2025.
 #
 #, fuzzy
 msgid ""
@@ -9,65 +9,65 @@ msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-21 23:29+0200\n"
-"PO-Revision-Date: 2025-10-22 00:32+0200\n"
-"Last-Translator: furik30 <furik@krv.li>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"PO-Revision-Date: 2025-10-21 23:30+0200\n\n"
+"Last-Translator: axelitama\n"
+"Language-Team: Italian\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: customButtonsManager.js:10
 msgid "Custom Commands"
-msgstr "Commandes personnalisées"
+msgstr "Comandi Personalizzati"
 
 #: customButtonsManager.js:11
 msgid "Manage your custom entries for the power menu."
-msgstr "Gérer vos entrées personnalisées pour le menu d'alimentation."
+msgstr "Gestisci le tue voci personalizzate per il menu di spegnimento."
 
 #: customButtonsManager.js:43
 msgid "Add New Command..."
-msgstr "Ajouter une commande..."
+msgstr "Aggiungi Nuovo Comando..."
 
 #: customButtonsManager.js:66
 msgid "at the end"
-msgstr "à la fin"
+msgstr "alla fine"
 
 #: customButtonsManager.js:67
 msgid "Position"
-msgstr "Position"
+msgstr "Posizione"
 
 #: customButtonsManager.js:95
 msgid "Name"
-msgstr "Nom"
+msgstr "Nome"
 
 #: customButtonsManager.js:96
 msgid "Command"
-msgstr "Commande"
+msgstr "Comando"
 
 #: customButtonsManager.js:98
 msgid "Position (0 = at the end)"
-msgstr "Position (0 = à la fin)"
+msgstr "Posizione (0 = alla fine)"
 
 #: customButtonsManager.js:104
 msgid "Delete"
-msgstr "Supprimer"
+msgstr "Elimina"
 
 #: customButtonsManager.js:107
 msgid "Cancel"
-msgstr "Annuler"
+msgstr "Annulla"
 
 #: customButtonsManager.js:108
 msgid "Save"
-msgstr "Enregistrer"
+msgstr "Salva"
 
 #: prefs.js:13
 msgid "General"
-msgstr "Général"
+msgstr "Generale"
 
 #: prefs.js:20
 msgid "Power Off Options"
-msgstr "Options d’arrêt"
+msgstr "Opzioni di Spegnimento"
 
 #: prefs.js:22
 msgid ""
@@ -79,65 +79,59 @@ msgid ""
 "of 'systemctl' respective commands and must be enabled and configured in "
 "your system to work properly.\n"
 msgstr ""
-"Choisissez les options à afficher dans la boîte de dialogue d’arrêt.\n"
+"Scegli quali opzioni mostrare nel dialogo di spegnimento.\n"
 "\n"
-"<b>Remarque :</b> La fonction « Éteindre l’écran » ne fonctionne que sous "
-"X11 ; Wayland n’est pas pris en charge.\n"
-"<b>Remarque :</b> Les options d’hibernation, de veille hybride et de "
-"redémarrage utilisent les commandes « systemctl » correspondantes et doivent "
-"être activées et configurées dans votre système pour fonctionner "
-"correctement.\n"
+"<b>Nota:</b> La funzione \"Spegni Schermo\" funziona solo su X11; Wayland "
+"non è supportato.\n"
+"<b>Nota:</b> Le opzioni di Ibernazione, Sospensione Ibrida e Riavvio "
+"utilizzano i comandi 'systemctl' e devono essere abilitate e configurate correttamente nel sistema.\n"
 
 #: prefs.js:31 buttons/screenOffButton.js:7
 msgid "Turn Off Screen"
-msgstr "Éteindre l'écran"
+msgstr "Spegni Schermo"
 
 #: prefs.js:32
 msgid "Immediately turn off the monitor/display."
-msgstr "Éteint immédiatement le moniteur/l'écran."
+msgstr "Spegni immediatamente il monitor/display."
 
 #: prefs.js:37 buttons/hybridSleepButton.js:7
 msgid "Hybrid Sleep"
-msgstr "Mettre en veille hybride"
+msgstr "Sospensione Ibrida"
 
 #: prefs.js:38
 msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
-msgstr ""
-"Met en veille et enregistre aussi l'état du système sur le disque (sécurisé "
-"en cas de coupure de courant)."
+msgstr "Sospendi in RAM e salva lo stato del sistema su disco (sicuro in caso di perdita di alimentazione)."
 
 #: prefs.js:43 buttons/suspendThenHibernateButton.js:7
 msgid "Suspend then Hibernate"
-msgstr "Mettre en veille, puis hiberner"
+msgstr "Sospendi e poi Iberna"
 
 #: prefs.js:44
 msgid "Suspend the system and automatically hibernate after a timeout."
-msgstr "Met en veille puis hiberne automatiquement après un délai."
+msgstr "Sospendi il sistema e iberna automaticamente dopo un timeout."
 
 #: prefs.js:49 buttons/hibernationButton.js:7
 msgid "Hibernate"
-msgstr "Hiberner"
+msgstr "Iberna"
 
 #: prefs.js:50
 msgid ""
 "Save system state to disk and power off (slower to resume than suspend)."
 msgstr ""
-"Enregistre l'état du système sur le disque et éteint l’ordinateur (plus lent "
-"à reprendre que la veille)."
+"Salva lo stato del sistema su disco e spegne (più lento da riprendere rispetto alla sospensione)."
 
 #: prefs.js:55 buttons/softRebootButton.js:7
 msgid "Restart user space (Soft Reboot)"
-msgstr "Redémarrer l'espace utilisateur (Redémarrage logiciel)"
+msgstr "Riavvia lo spazio utente"
 
 #: prefs.js:56
 msgid "Restart the user space without rebooting the entire system."
-msgstr ""
-"Redémarre l'espace utilisateur sans redémarrer entièrement le système."
+msgstr "Riavvia lo spazio utente senza riavviare l'intero sistema."
 
 #: prefs.js:61 buttons/rebootToBiosButton.js:7
 msgid "Restart to BIOS"
-msgstr "Redémarrer vers UEFI"
+msgstr "Riavvia nel BIOS"
 
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
-msgstr "Redémarre directement dans le micrologiciel UEFI du système."
+msgstr "Riavvia direttamente nella configurazione del firmware/BIOS di sistema."

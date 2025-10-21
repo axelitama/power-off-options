@@ -1,6 +1,6 @@
 # Power Off Options
 
-[RU](READMEs/README_ru.md)
+[IT](READMEs/README_it.md) [RU](READMEs/README_ru.md)
 
 Power Off Options is a GNOME Shell extension that adds additional buttons to the Power Off dialog:
 
@@ -14,9 +14,7 @@ Power Off Options is a GNOME Shell extension that adds additional buttons to the
 
 <p align="center">
   <img src="resources/en1.png" alt="screenshot1"/>
-  <img src="resources/en2.png" alt="screenshot2"/>
 </p>
-
 
 ## Requirements
 
@@ -30,6 +28,7 @@ Install from the GNOME Extensions website:
 <https://extensions.gnome.org/extension/8189/power-off-options/> 
 
 Otherwise it can be installed manually:
+
 1. download or clone this repository;
 2. move into the extension directory;
 3. run:

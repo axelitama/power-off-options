@@ -12,7 +12,6 @@ Power Off Options — это расширение GNOME Shell, которое д
 
 <p align="center">
   <img src="../resources/ru1.png"/>
-  <img src="../resources/ru2.png"/>
 </p>
 
 ## Требования
@@ -27,6 +26,7 @@ Power Off Options — это расширение GNOME Shell, которое д
 <https://extensions.gnome.org/extension/8189/power-off-options/>
 
 Или установите вручную:
+
 1. скачайте или клонируйте этот репозиторий;
 2. перейдите в каталог расширения;
 3. выполните:
