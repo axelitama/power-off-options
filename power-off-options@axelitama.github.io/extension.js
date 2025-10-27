@@ -33,20 +33,23 @@ export default class PowerOffOptions extends Extension {
     disable() {
         if (this._deferredInitId) {
             GLib.Source.remove(this._deferredInitId);
-            this._deferredInitId = null;
         }
+        this._deferredInitId = null;
 
         if (this._settingsConnectionId) {
             this._settings.disconnect(this._settingsConnectionId);
-            this._settingsConnectionId = null;
         }
+        this._settingsConnectionId = null;
+
+        if (this._loginManager) {
+            this._loginManager.destroy();
+        }
+        this._loginManager = null;
 
         this._destroyAllButtons();
+        
         this._systemMenu = null;
         this._settings = null;
-        this._loginManager = null;
-        this._builtInButtons = null;
-        this._customButtons = null;
     }
 
     _createBuiltInButtons() {
@@ -163,8 +166,11 @@ export default class PowerOffOptions extends Extension {
         if (this._builtInButtons) {
             this._builtInButtons.forEach(b => b.instance.destroy());
         }
+        this._builtInButtons = null;
+
         if (this._customButtons) {
             this._customButtons.forEach(b => b.instance.destroy());
         }
+        this._customButtons = null;
     }
 }
