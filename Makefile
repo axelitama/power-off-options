@@ -19,7 +19,6 @@ build: clean
 	@echo "Compiling translations (.po to .mo)..."
 	find "$(SRC_DIR)/locale" -name '*.po' | while read -r po; do \
 		mo="$${po%.po}.mo"; \
-		echo "  -> $$po"; \
 		msgfmt "$$po" -o "$$mo"; \
 	done
 
@@ -29,7 +28,7 @@ clean:
 	@echo "Removing compiled translations (.mo)..."
 	find "$(SRC_DIR)/locale" -name '*.mo' -type f -delete
 
-zip: clean
+zip: clean build
 	@echo "Creating zip archive $(ZIP_NAME)..."
 	rm -f "$(ZIP_NAME)"
-	cd $(SRC_DIR) && zip -r "../$(ZIP_NAME)" "." -x '*.zip' '*.swp' '*~' '#*#' '.*'
+	cd $(SRC_DIR) && zip -r "../${ZIP_NAME}" "." -i '*.js' '*.json' '*.xml' '*.mo'
