@@ -41,13 +41,9 @@ export default class PowerOffOptions extends Extension {
         }
         this._settingsConnectionId = null;
 
-        if (this._loginManager) {
-            this._loginManager.destroy();
-        }
-        this._loginManager = null;
-
         this._destroyAllButtons();
         
+        this._loginManager = null;
         this._systemMenu = null;
         this._settings = null;
     }
