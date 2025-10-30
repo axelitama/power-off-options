@@ -1,7 +1,7 @@
 {
     "name": "Power Off Options",
     "uuid": "power-off-options@axelitama.github.io",
-    "description": "Adds extra options such as 'Turn Off Screen', 'Hibernate', 'Hybrid Sleep', and more to the GNOME Power Off dialog.",
+    "description": "Adds extra options to the GNOME Power Off dialog.",
     "shell-version": ["48", "49"],
     "url": "https://github.com/axelitama/power-off-options",
     "gettext-domain": "power-off-options@axelitama.github.io",
