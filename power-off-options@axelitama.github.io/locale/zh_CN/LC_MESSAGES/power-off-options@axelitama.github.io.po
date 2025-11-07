@@ -81,7 +81,7 @@ msgid ""
 msgstr ""
 "选择要在关机菜单中显示的选项\n"
 "\n"
-"<b>注意：</b> \"关闭屏幕\" 功能仅在 X11 下起作用; 不支持 Wayland\n"
+"<b>注意：</b> \"关闭屏幕\" 功能仅在 X11 下起作用；不支持 Wayland\n"
 "<b>注意：</b> 休眠、混合睡眠 和 重启 相关功能使用相应的 systemctl 命令实现，"
 "并且必须要正确的在系统中启用以及配置才能正常工作\n"
 
@@ -107,7 +107,7 @@ msgstr "延迟休眠"
 
 #: prefs.js:44
 msgid "Suspend the system and automatically hibernate after a timeout."
-msgstr "挂起系统并且一定时间后自动休眠"
+msgstr "挂起系统并在一定时间后自动休眠"
 
 #: prefs.js:49 buttons/hibernationButton.js:7
 msgid "Hibernate"
