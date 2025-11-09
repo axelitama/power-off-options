@@ -22,7 +22,7 @@ Power Off Options è un’estensione per **GNOME Shell** che aggiunge pulsanti a
 
 ## Installazione
 
-Installa dal sito ufficiale delle estensioni GNOME:
+Installa dal sito ufficiale delle estensioni GNOME:  
 <https://extensions.gnome.org/extension/8189/power-off-options/>
 
 In alternativa, è possibile installarla manualmente:

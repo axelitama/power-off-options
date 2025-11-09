@@ -22,7 +22,7 @@ Power Off Options — это расширение GNOME Shell, которое д
 
 ## Установка
 
-Установите с сайта расширений GNOME:
+Установите с сайта расширений GNOME:  
 <https://extensions.gnome.org/extension/8189/power-off-options/>
 
 Или установите вручную:
