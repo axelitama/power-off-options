@@ -11,14 +11,14 @@ Power Off Options è un’estensione per **GNOME Shell** che aggiunge pulsanti a
 - **Comandi Personalizzati** — Aggiungi i tuoi comandi personalizzati tramite la finestra delle preferenze. I comandi personalizzati permettono di aggiungere voci al menu di spegnimento con qualsiasi comando shell tu voglia eseguire.
 
 <p align="center">
-  <img src="../resources/it1.png" alt="screenshot1"/>
+  <img src="../resources/it_1.png" alt="screenshot1"/>
 </p>
 
 ## Requisiti
 
 - GNOME Shell;
-- La funzione di spegnimento dello schermo funziona solo in X11, Wayland non è supportato;
-- Le opzioni relative a Ibernazione, Sospensione Ibrida e Riavvio utilizzano i rispettivi comandi `systemctl` e devono essere abilitate e configurate correttamente nel sistema per funzionare.
+- la funzione di spegnimento dello schermo funziona solo in X11, Wayland non è supportato;
+- le opzioni relative a Ibernazione, Sospensione Ibrida e Riavvio utilizzano i rispettivi comandi `systemctl` e devono essere abilitate e configurate correttamente nel sistema per funzionare.
 
 ## Installazione
 
@@ -28,11 +28,11 @@ Installa dal sito ufficiale delle estensioni GNOME:
 In alternativa, è possibile installarla manualmente:
 
 1. Scarica o clona questo repository;
-2. Entra nella directory dell’estensione;
-3. Esegui:  
+2. entra nella directory dell’estensione;
+3. esegui:  
    - `make` per installare l’estensione;
    - `make uninstall` per disinstallarla;
-4. Riavvia GNOME Shell per applicare le modifiche (ad esempio, disconnettiti e riconnettiti).
+4. riavvia GNOME Shell per applicare le modifiche (ad esempio, disconnettiti e riconnettiti).
 
 ## Preferenze
 

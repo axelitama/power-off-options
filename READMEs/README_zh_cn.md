@@ -11,7 +11,7 @@ Power Off Options 是一个用于向电源菜单添加额外选项的 GNOME Shel
 - **自定义命令** — 通过设置窗口添加您的自定义命令，自定义命令允许您向电源菜单添加条目用于执行任何 shell 命令
 
 <p align="center">
-  <img src="resources/en1.png" alt="screenshot1"/>
+  <img src="../resources/zh-CN_1.png" alt="screenshot1"/>
 </p>
 
 ## 要求

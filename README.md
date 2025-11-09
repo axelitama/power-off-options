@@ -1,6 +1,6 @@
 # Power Off Options
 
-[Italiano](READMEs/README_it.md) | [Pусский](READMEs/README_ru.md) | [简体中文](READMEs/README_zh_cn.md)
+[简体中文](READMEs/README_zh_cn.md) | [Français](READMEs/README_fr.md) | [Italiano](READMEs/README_it.md) | [Pусский](READMEs/README_ru.md)
 
 Power Off Options is a GNOME Shell extension that adds additional buttons to the Power Off dialog:
 
@@ -13,7 +13,7 @@ Power Off Options is a GNOME Shell extension that adds additional buttons to the
 - **Custom Commands** — Add your own custom commands through the preferences window. Custom commands allow you to add your own entries to the power menu with any shell command you want to execute.
 
 <p align="center">
-  <img src="resources/en1.png" alt="screenshot1"/>
+  <img src="resources/en_1.png" alt="screenshot1"/>
 </p>
 
 ## Requirements
