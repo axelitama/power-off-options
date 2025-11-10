@@ -11,7 +11,7 @@ Power Off Options é uma extensão do **GNOME Shell** que inclui opções adicio
 - **Comandos Personalizados** — Adicione seus próprios comandos através da janela de preferências. Comandos personalizados permitem incluir novas opções no menu de energia com qualquer comando de shell que você desejar executar.
 
 <p align="center">
-  <img src="../resources/en_1.png" alt="screenshot1"/>
+  <img src="../resources/pt-BR_1.png" alt="screenshot1"/>
 </p>
 
 ## Requisitos
