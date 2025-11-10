@@ -4,7 +4,7 @@ Power Off Options é uma extensão do **GNOME Shell** que inclui opções adicio
 
 - **Desligar Tela** — Desliga imediatamente o monitor/display.
 - **Suspensão Híbrida** — Suspende para a RAM e salva o estado do sistema no disco (seguro em caso de perda de energia).
-- **Suspende e então Hiberna** — Suspende o sistema e hiberna automaticamente após um certo tempo.
+- **Suspender e então Hibernar** — Suspende o sistema e hiberna automaticamente após um certo tempo.
 - **Hibernar** — Salva o estado do sistema no disco e então desliga (início mais lento que a suspensão).
 - **Reiniciar o espaço de usuário** — Reinicia o espaço de usuário sem precisar reiniciar todo o sistema.
 - **Reiniciar para a BIOS** — Reinicia diretamente para as configurações de firmware/BIOS do sistema.
