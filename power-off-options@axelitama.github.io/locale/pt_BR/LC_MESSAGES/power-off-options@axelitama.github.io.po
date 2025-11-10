@@ -1,0 +1,137 @@
+# Brazilian Portuguese translation for power-off-options GNOME Shell extension
+# Copyright (C) 2025 axelitama
+# This file is distributed under the same license as the PACKAGE package.
+# fkeglevich <fkeglevich@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: power-off-options\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-21 23:29+0200\n"
+"PO-Revision-Date: 2025-11-10 14:58-0300\n\n"
+"Last-Translator: fkeglevich <fkeglevich@gmail.com>\n"
+"Language-Team: Brazilian Portuguese\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: customButtonsManager.js:10
+msgid "Custom Commands"
+msgstr "Comandos Personalizados"
+
+#: customButtonsManager.js:11
+msgid "Manage your custom entries for the power menu."
+msgstr "Gerencie suas opções personalizadas para o menu de energia."
+
+#: customButtonsManager.js:43
+msgid "Add New Command..."
+msgstr "Adicionar Novo Comando..."
+
+#: customButtonsManager.js:66
+msgid "at the end"
+msgstr "no final"
+
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr "Posição"
+
+#: customButtonsManager.js:95
+msgid "Name"
+msgstr "Nome"
+
+#: customButtonsManager.js:96
+msgid "Command"
+msgstr "Comando"
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
+msgstr "Posição (0 = no final)"
+
+#: customButtonsManager.js:104
+msgid "Delete"
+msgstr "Deletar"
+
+#: customButtonsManager.js:107
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: customButtonsManager.js:108
+msgid "Save"
+msgstr "Salvar"
+
+#: prefs.js:13
+msgid "General"
+msgstr "Geral"
+
+#: prefs.js:20
+msgid "Power Off Options"
+msgstr "Opções de Desligamento"
+
+#: prefs.js:22
+msgid ""
+"Choose which options to show in the Power Off dialog.\n"
+"\n"
+"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
+"not supported.\n"
+"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
+"of 'systemctl' respective commands and must be enabled and configured in "
+"your system to work properly.\n"
+msgstr ""
+"Escolha quais opções exibir na caixa de diálogo de desligamento.\n"
+"\n"
+"<b>Nota:</b> A função \"Desligar Tela\" funciona somente no X11; Wayland "
+"não é suportado.\n"
+"<b>Nota:</b> As opções de Hibernação, Suspensão Híbrida e Reiniciar "
+"utilizam o comando 'systemctl' e devem estar habilitadas e configuradas corretamente em seu sistema.\n"
+
+#: prefs.js:31 buttons/screenOffButton.js:7
+msgid "Turn Off Screen"
+msgstr "Desligar Tela"
+
+#: prefs.js:32
+msgid "Immediately turn off the monitor/display."
+msgstr "Desliga imediatamente o monitor/display."
+
+#: prefs.js:37 buttons/hybridSleepButton.js:7
+msgid "Hybrid Sleep"
+msgstr "Suspensão Híbrida"
+
+#: prefs.js:38
+msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
+msgstr "Suspende para a RAM e salva o estado do sistema no disco (seguro em caso de perda de energia)."
+
+#: prefs.js:43 buttons/suspendThenHibernateButton.js:7
+msgid "Suspend then Hibernate"
+msgstr "Suspender e então Hibernar"
+
+#: prefs.js:44
+msgid "Suspend the system and automatically hibernate after a timeout."
+msgstr "Suspende o sistema e hiberna automaticamente após um certo tempo."
+
+#: prefs.js:49 buttons/hibernationButton.js:7
+msgid "Hibernate"
+msgstr "Hibernar"
+
+#: prefs.js:50
+msgid ""
+"Save system state to disk and power off (slower to resume than suspend)."
+msgstr ""
+"Salva o estado do sistema no disco e então desliga (início mais lento que a suspensão)."
+
+#: prefs.js:55 buttons/softRebootButton.js:7
+msgid "Restart user space (Soft Reboot)"
+msgstr "Reiniciar o espaço de usuário"
+
+#: prefs.js:56
+msgid "Restart the user space without rebooting the entire system."
+msgstr "Reinicia o espaço de usuário sem precisar reiniciar todo o sistema."
+
+#: prefs.js:61 buttons/rebootToBiosButton.js:7
+msgid "Restart to BIOS"
+msgstr "Reiniciar para a BIOS"
+
+#: prefs.js:62
+msgid "Reboot directly into the system firmware/BIOS setup."
+msgstr "Reinicia diretamente para as configurações de firmware/BIOS do sistema."
