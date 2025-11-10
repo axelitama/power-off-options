@@ -23,7 +23,7 @@ msgstr "Comandos Personalizados"
 
 #: customButtonsManager.js:11
 msgid "Manage your custom entries for the power menu."
-msgstr "Gerencie suas entradas personalizadas para o menu de energia."
+msgstr "Gerencie suas opções personalizadas para o menu de energia."
 
 #: customButtonsManager.js:43
 msgid "Add New Command..."
@@ -104,7 +104,7 @@ msgstr "Suspende para a RAM e salva o estado do sistema no disco (seguro em caso
 
 #: prefs.js:43 buttons/suspendThenHibernateButton.js:7
 msgid "Suspend then Hibernate"
-msgstr "Suspende e então Hiberna"
+msgstr "Suspender e então Hibernar"
 
 #: prefs.js:44
 msgid "Suspend the system and automatically hibernate after a timeout."
