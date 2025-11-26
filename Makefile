@@ -13,7 +13,7 @@ uninstall:
 	@echo "Uninstalling extension from $(EXTENSION_DIR)..."
 	rm -rf "$(EXTENSION_DIR)"
 
-build: clean sync-locales
+build: clean
 	@echo "Compiling schemas..."
 	glib-compile-schemas $(SRC_DIR)/schemas/
 	@echo "Compiling translations (.po to .mo)..."
