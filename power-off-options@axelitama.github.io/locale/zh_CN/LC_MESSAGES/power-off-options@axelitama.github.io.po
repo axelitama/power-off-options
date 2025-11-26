@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 23:29+0200\n"
+"POT-Creation-Date: 2025-10-30 20:43+0100\n"
 "PO-Revision-Date: 2025-11-07 17:37+0800\n"
 "Last-Translator: EricWanAR <wanboyao@outlook.com>\n"
 "Language-Team: Chinese (Simplified)\n"
@@ -16,6 +16,30 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: buttons/hibernationButton.js:7 prefs.js:49
+msgid "Hibernate"
+msgstr "休眠"
+
+#: buttons/hybridSleepButton.js:7 prefs.js:37
+msgid "Hybrid Sleep"
+msgstr "混合睡眠"
+
+#: buttons/rebootToBiosButton.js:7 prefs.js:61
+msgid "Restart to BIOS"
+msgstr "重启到 BIOS"
+
+#: buttons/screenOffButton.js:7 prefs.js:31
+msgid "Turn Off Screen"
+msgstr "关闭屏幕"
+
+#: buttons/softRebootButton.js:7 prefs.js:55
+msgid "Restart user space (Soft Reboot)"
+msgstr "重启用户空间（软重启）"
+
+#: buttons/suspendThenHibernateButton.js:7 prefs.js:43
+msgid "Suspend then Hibernate"
+msgstr "延迟休眠"
 
 #: customButtonsManager.js:10
 msgid "Custom Commands"
@@ -85,50 +109,26 @@ msgstr ""
 "<b>注意：</b> 休眠、混合睡眠 和 重启 相关功能使用相应的 systemctl 命令实现，"
 "并且必须要正确的在系统中启用以及配置才能正常工作\n"
 
-#: prefs.js:31 buttons/screenOffButton.js:7
-msgid "Turn Off Screen"
-msgstr "关闭屏幕"
-
 #: prefs.js:32
 msgid "Immediately turn off the monitor/display."
 msgstr "立即关闭显示器"
-
-#: prefs.js:37 buttons/hybridSleepButton.js:7
-msgid "Hybrid Sleep"
-msgstr "混合睡眠"
 
 #: prefs.js:38
 msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
 msgstr "挂起到内存的同时也将系统状态保存到硬盘中（断电也能恢复）"
 
-#: prefs.js:43 buttons/suspendThenHibernateButton.js:7
-msgid "Suspend then Hibernate"
-msgstr "延迟休眠"
-
 #: prefs.js:44
 msgid "Suspend the system and automatically hibernate after a timeout."
 msgstr "挂起系统并在一定时间后自动休眠"
-
-#: prefs.js:49 buttons/hibernationButton.js:7
-msgid "Hibernate"
-msgstr "休眠"
 
 #: prefs.js:50
 msgid ""
 "Save system state to disk and power off (slower to resume than suspend)."
 msgstr "保存系统状态到硬盘并关机（恢复比挂起慢）"
 
-#: prefs.js:55 buttons/softRebootButton.js:7
-msgid "Restart user space (Soft Reboot)"
-msgstr "重启用户空间（软重启）"
-
 #: prefs.js:56
 msgid "Restart the user space without rebooting the entire system."
 msgstr "仅重启用户空间而不是整个操作系统"
-
-#: prefs.js:61 buttons/rebootToBiosButton.js:7
-msgid "Restart to BIOS"
-msgstr "重启到 BIOS"
 
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."

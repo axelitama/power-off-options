@@ -8,14 +8,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 23:29+0200\n"
-"PO-Revision-Date: 2025-11-10 14:58-0300\n\n"
+"POT-Creation-Date: 2025-10-30 20:43+0100\n"
+"PO-Revision-Date: 2025-11-10 14:58-0300\n"
 "Last-Translator: fkeglevich <fkeglevich@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"\n"
+
+#: buttons/hibernationButton.js:7 prefs.js:49
+msgid "Hibernate"
+msgstr "Hibernar"
+
+#: buttons/hybridSleepButton.js:7 prefs.js:37
+msgid "Hybrid Sleep"
+msgstr "Suspensão Híbrida"
+
+#: buttons/rebootToBiosButton.js:7 prefs.js:61
+msgid "Restart to BIOS"
+msgstr "Reiniciar para a BIOS"
+
+#: buttons/screenOffButton.js:7 prefs.js:31
+msgid "Turn Off Screen"
+msgstr "Desligar Tela"
+
+#: buttons/softRebootButton.js:7 prefs.js:55
+msgid "Restart user space (Soft Reboot)"
+msgstr "Reiniciar o espaço de usuário"
+
+#: buttons/suspendThenHibernateButton.js:7 prefs.js:43
+msgid "Suspend then Hibernate"
+msgstr "Suspender e então Hibernar"
 
 #: customButtonsManager.js:10
 msgid "Custom Commands"
@@ -81,57 +106,38 @@ msgid ""
 msgstr ""
 "Escolha quais opções exibir na caixa de diálogo de desligamento.\n"
 "\n"
-"<b>Nota:</b> A função \"Desligar Tela\" funciona somente no X11; Wayland "
-"não é suportado.\n"
-"<b>Nota:</b> As opções de Hibernação, Suspensão Híbrida e Reiniciar "
-"utilizam o comando 'systemctl' e devem estar habilitadas e configuradas corretamente em seu sistema.\n"
-
-#: prefs.js:31 buttons/screenOffButton.js:7
-msgid "Turn Off Screen"
-msgstr "Desligar Tela"
+"<b>Nota:</b> A função \"Desligar Tela\" funciona somente no X11; Wayland não "
+"é suportado.\n"
+"<b>Nota:</b> As opções de Hibernação, Suspensão Híbrida e Reiniciar utilizam "
+"o comando 'systemctl' e devem estar habilitadas e configuradas corretamente "
+"em seu sistema.\n"
 
 #: prefs.js:32
 msgid "Immediately turn off the monitor/display."
 msgstr "Desliga imediatamente o monitor/display."
 
-#: prefs.js:37 buttons/hybridSleepButton.js:7
-msgid "Hybrid Sleep"
-msgstr "Suspensão Híbrida"
-
 #: prefs.js:38
 msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
-msgstr "Suspende para a RAM e salva o estado do sistema no disco (seguro em caso de perda de energia)."
-
-#: prefs.js:43 buttons/suspendThenHibernateButton.js:7
-msgid "Suspend then Hibernate"
-msgstr "Suspender e então Hibernar"
+msgstr ""
+"Suspende para a RAM e salva o estado do sistema no disco (seguro em caso de "
+"perda de energia)."
 
 #: prefs.js:44
 msgid "Suspend the system and automatically hibernate after a timeout."
 msgstr "Suspende o sistema e hiberna automaticamente após um certo tempo."
 
-#: prefs.js:49 buttons/hibernationButton.js:7
-msgid "Hibernate"
-msgstr "Hibernar"
-
 #: prefs.js:50
 msgid ""
 "Save system state to disk and power off (slower to resume than suspend)."
 msgstr ""
-"Salva o estado do sistema no disco e então desliga (início mais lento que a suspensão)."
-
-#: prefs.js:55 buttons/softRebootButton.js:7
-msgid "Restart user space (Soft Reboot)"
-msgstr "Reiniciar o espaço de usuário"
+"Salva o estado do sistema no disco e então desliga (início mais lento que a "
+"suspensão)."
 
 #: prefs.js:56
 msgid "Restart the user space without rebooting the entire system."
 msgstr "Reinicia o espaço de usuário sem precisar reiniciar todo o sistema."
 
-#: prefs.js:61 buttons/rebootToBiosButton.js:7
-msgid "Restart to BIOS"
-msgstr "Reiniciar para a BIOS"
-
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
-msgstr "Reinicia diretamente para as configurações de firmware/BIOS do sistema."
+msgstr ""
+"Reinicia diretamente para as configurações de firmware/BIOS do sistema."

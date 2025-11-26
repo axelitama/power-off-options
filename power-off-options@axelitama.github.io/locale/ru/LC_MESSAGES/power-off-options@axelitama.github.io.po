@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 23:29+0200\n"
+"POT-Creation-Date: 2025-10-30 20:43+0100\n"
 "PO-Revision-Date: 2025-10-22 00:11+0200\n"
 "Last-Translator: furik30 <furik@krv.li>\n"
 "Language-Team: Russian\n"
@@ -16,6 +16,30 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: buttons/hibernationButton.js:7 prefs.js:49
+msgid "Hibernate"
+msgstr "Гибернация"
+
+#: buttons/hybridSleepButton.js:7 prefs.js:37
+msgid "Hybrid Sleep"
+msgstr "Гибридный сон"
+
+#: buttons/rebootToBiosButton.js:7 prefs.js:61
+msgid "Restart to BIOS"
+msgstr "Перезагрузка в BIOS"
+
+#: buttons/screenOffButton.js:7 prefs.js:31
+msgid "Turn Off Screen"
+msgstr "Выключить экран"
+
+#: buttons/softRebootButton.js:7 prefs.js:55
+msgid "Restart user space (Soft Reboot)"
+msgstr "Мягкий Перезапуск"
+
+#: buttons/suspendThenHibernateButton.js:7 prefs.js:43
+msgid "Suspend then Hibernate"
+msgstr "Сон, затем гибернация"
 
 #: customButtonsManager.js:10
 msgid "Custom Commands"
@@ -81,57 +105,38 @@ msgid ""
 msgstr ""
 "Выберите, какие параметры показывать в диалоге выключения.\n"
 "\n"
-"<b>Примечание:</b> Функция «Выключить экран» работает только в X11; Wayland не "
-"поддерживается.\n"
-"<b>Примечание:</b> Гибернация, гибридный сон и параметры перезагрузки используют "
-"соответствующие команды «systemctl» и должны быть включены и настроены в "
-"вашей системе для корректной работы.\n"
-
-#: prefs.js:31 buttons/screenOffButton.js:7
-msgid "Turn Off Screen"
-msgstr "Выключить экран"
+"<b>Примечание:</b> Функция «Выключить экран» работает только в X11; Wayland "
+"не поддерживается.\n"
+"<b>Примечание:</b> Гибернация, гибридный сон и параметры перезагрузки "
+"используют соответствующие команды «systemctl» и должны быть включены и "
+"настроены в вашей системе для корректной работы.\n"
 
 #: prefs.js:32
 msgid "Immediately turn off the monitor/display."
 msgstr "Немедленно выключает монитор/дисплей."
 
-#: prefs.js:37 buttons/hybridSleepButton.js:7
-msgid "Hybrid Sleep"
-msgstr "Гибридный сон"
-
 #: prefs.js:38
 msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
-msgstr "Переводит в сон и сохраняет состояние системы на диск (безопасно при потере питания)."
-
-#: prefs.js:43 buttons/suspendThenHibernateButton.js:7
-msgid "Suspend then Hibernate"
-msgstr "Сон, затем гибернация"
+msgstr ""
+"Переводит в сон и сохраняет состояние системы на диск (безопасно при потере "
+"питания)."
 
 #: prefs.js:44
 msgid "Suspend the system and automatically hibernate after a timeout."
-msgstr "Переводит систему в сон и автоматически включает гибернацию по таймауту."
-
-#: prefs.js:49 buttons/hibernationButton.js:7
-msgid "Hibernate"
-msgstr "Гибернация"
+msgstr ""
+"Переводит систему в сон и автоматически включает гибернацию по таймауту."
 
 #: prefs.js:50
 msgid ""
 "Save system state to disk and power off (slower to resume than suspend)."
 msgstr ""
-"Сохраняет состояние системы на диск и выключает компьютер (медленнее восстанавливается, чем сон)."
-
-#: prefs.js:55 buttons/softRebootButton.js:7
-msgid "Restart user space (Soft Reboot)"
-msgstr "Мягкий Перезапуск"
+"Сохраняет состояние системы на диск и выключает компьютер (медленнее "
+"восстанавливается, чем сон)."
 
 #: prefs.js:56
 msgid "Restart the user space without rebooting the entire system."
-msgstr "Перезапускает пользовательское пространство без перезагрузки всей системы."
-
-#: prefs.js:61 buttons/rebootToBiosButton.js:7
-msgid "Restart to BIOS"
-msgstr "Перезагрузка в BIOS"
+msgstr ""
+"Перезапускает пользовательское пространство без перезагрузки всей системы."
 
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
