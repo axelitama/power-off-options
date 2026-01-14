@@ -25,13 +25,12 @@ export default class CmdAsyncButton extends Button {
     }
 
     _execute() {
+        // FIXED: Removed the 5th and 6th arguments (setup, user_data) to suppress "Too many arguments" warning
         GLib.spawn_async(
             this._workingDir,
             this._command,
             this._env,
-            this._flags,
-            this._setup,
-            this._user_data
+            this._flags
         );
     }
 
