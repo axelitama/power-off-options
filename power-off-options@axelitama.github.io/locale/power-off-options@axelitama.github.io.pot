@@ -128,3 +128,15 @@ msgstr ""
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr ""
+
+#: buttons/settingsButton.js
+msgid "Customize this menu"
+msgstr ""
+
+#: prefs.js
+msgid "Settings Button (Customize this menu)"
+msgstr ""
+
+#: prefs.js
+msgid "Show a button to open these preferences directly from the menu."
+msgstr ""

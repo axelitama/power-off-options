@@ -140,3 +140,15 @@ msgstr "Redémarre l'espace utilisateur sans redémarrer entièrement le systèm
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr "Redémarre directement dans le micrologiciel UEFI du système."
+
+#: buttons/settingsButton.js
+msgid "Customize this menu"
+msgstr "Personnaliser ce menu"
+
+#: prefs.js
+msgid "Settings Button (Customize this menu)"
+msgstr "Bouton Paramètres (Personnaliser ce menu)"
+
+#: prefs.js
+msgid "Show a button to open these preferences directly from the menu."
+msgstr "Afficher un bouton pour ouvrir ces préférences directement depuis le menu."

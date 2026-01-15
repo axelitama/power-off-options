@@ -133,3 +133,15 @@ msgstr "仅重启用户空间而不是整个操作系统"
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr "直接重启到 系统固件/BIOS 设置中"
+
+#: buttons/settingsButton.js
+msgid "Customize this menu"
+msgstr "自定义此菜单"
+
+#: prefs.js
+msgid "Settings Button (Customize this menu)"
+msgstr "设置按钮（自定义此菜单）"
+
+#: prefs.js
+msgid "Show a button to open these preferences directly from the menu."
+msgstr "显示一个直接从菜单打开首选项的按钮。"

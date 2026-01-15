@@ -141,3 +141,15 @@ msgstr "Reinicia o espaço de usuário sem precisar reiniciar todo o sistema."
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr ""
 "Reinicia diretamente para as configurações de firmware/BIOS do sistema."
+
+#: buttons/settingsButton.js
+msgid "Customize this menu"
+msgstr "Personalizar este menu"
+
+#: prefs.js
+msgid "Settings Button (Customize this menu)"
+msgstr "Botão de Configurações (Personalizar este menu)"
+
+#: prefs.js
+msgid "Show a button to open these preferences directly from the menu."
+msgstr "Mostrar um botão para abrir essas preferências diretamente do menu."
