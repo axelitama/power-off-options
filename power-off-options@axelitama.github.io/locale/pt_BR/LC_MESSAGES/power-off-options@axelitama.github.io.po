@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 20:43+0100\n"
+"POT-Creation-Date: 2026-01-17 16:08+0100\n"
 "PO-Revision-Date: 2025-11-10 14:58-0300\n"
 "Last-Translator: fkeglevich <fkeglevich@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
@@ -33,6 +33,10 @@ msgstr "Reiniciar para a BIOS"
 #: buttons/screenOffButton.js:7 prefs.js:31
 msgid "Turn Off Screen"
 msgstr "Desligar Tela"
+
+#: buttons/settingsButton.js:8
+msgid "Customize this menu"
+msgstr "Personalizar este menu"
 
 #: buttons/softRebootButton.js:7 prefs.js:55
 msgid "Restart user space (Soft Reboot)"
@@ -142,14 +146,10 @@ msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr ""
 "Reinicia diretamente para as configurações de firmware/BIOS do sistema."
 
-#: buttons/settingsButton.js
-msgid "Customize this menu"
-msgstr "Personalizar este menu"
-
-#: prefs.js
+#: prefs.js:67
 msgid "Settings Button (Customize this menu)"
 msgstr "Botão de Configurações (Personalizar este menu)"
 
-#: prefs.js
+#: prefs.js:68
 msgid "Show a button to open these preferences directly from the menu."
 msgstr "Mostrar um botão para abrir essas preferências diretamente do menu."

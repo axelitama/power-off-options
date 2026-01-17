@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 20:43+0100\n"
+"POT-Creation-Date: 2026-01-17 16:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,10 @@ msgstr ""
 
 #: buttons/screenOffButton.js:7 prefs.js:31
 msgid "Turn Off Screen"
+msgstr ""
+
+#: buttons/settingsButton.js:8
+msgid "Customize this menu"
 msgstr ""
 
 #: buttons/softRebootButton.js:7 prefs.js:55
@@ -129,14 +133,10 @@ msgstr ""
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr ""
 
-#: buttons/settingsButton.js
-msgid "Customize this menu"
-msgstr ""
-
-#: prefs.js
+#: prefs.js:67
 msgid "Settings Button (Customize this menu)"
 msgstr ""
 
-#: prefs.js
+#: prefs.js:68
 msgid "Show a button to open these preferences directly from the menu."
 msgstr ""
