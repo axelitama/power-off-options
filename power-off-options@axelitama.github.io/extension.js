@@ -97,7 +97,7 @@ export default class PowerOffOptions extends Extension {
                 key: 'settings',
                 instance: new SettingsButton(this._systemMenu),
                 settingKey: 'show-settings',
-                defaultPosition: 3,
+                defaultPosition: 5,
                 shiftDeps: ['screenOff', 'hybridSleep', 'suspendThenHibernate', 'hibernate', 'softReboot', 'rebootToBios'],
             },
         ];

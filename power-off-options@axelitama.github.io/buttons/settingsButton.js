@@ -5,6 +5,6 @@ export default class SettingsButton extends CmdAsyncButton {
     constructor(systemMenu) {
         const uuid = "power-off-options@axelitama.github.io";
         const argv = ['gnome-extensions', 'prefs', uuid];
-        super(systemMenu, _('Customize this menu'), argv);
+        super(systemMenu, '☰ ' + _('Customize this menu'), argv);
     }
 }
