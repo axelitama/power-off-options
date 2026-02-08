@@ -2,7 +2,7 @@
 
 [简体中文](READMEs/README_zh_cn.md) | [Français](READMEs/README_fr.md) | [Italiano](READMEs/README_it.md) |
 [Português Brasileiro](READMEs/README_pt_br.md) |
-[Pусский](READMEs/README_ru.md)
+[Pусский](READMEs/README_ru.md) | [한국어](READMEs/README_ko.md)
 
 Power Off Options is a GNOME Shell extension that adds additional buttons to the Power Off dialog:
 
