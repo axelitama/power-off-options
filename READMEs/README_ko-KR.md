@@ -11,7 +11,7 @@ Power Off Options은 컴퓨터 끄기 대화창에 아래 버튼을 추가하는
 - **사용자 정의 명령** — 설정 창에서 사용자 정의 명령을 추가할 수 있습니다. 사용자 정의 명령을 사용하여 실행하고자 하는 임의의 쉘 명령어를 전원 메뉴에 추가할 수 있습니다.  
 
 <p align="center">
-  <img src="../resources/ko_1.png" alt="스크린샷1"/>
+  <img src="../resources/ko-KR_1.png" alt="스크린샷1"/>
 </p>
 
 ## 요구사항
