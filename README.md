@@ -38,6 +38,9 @@ Otherwise it can be installed manually:
     - `make uninstall` to uninstall the extension;
 4. restart GNOME Shell to apply the changes (e.g. log out and log back in).
 
+> [!WARNING]  
+> **Still not working?** Try to check [Issue #1](https://github.com/axelitama/power-off-options/issues/1)
+
 ## Preferences
 
 You can enable or disable each button individually using the built-in preferences window:
