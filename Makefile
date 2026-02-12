@@ -8,6 +8,7 @@ ZIP_NAME=$(EXTENSION_NAME).zip
 install: uninstall build
 	@echo "Installing extension to $(EXTENSION_DIR)..."
 	cp -r "$(SRC_DIR)" "$(EXTENSION_DIR)"
+	find "$(EXTENSION_DIR)" -type f \( -name '*.po' -o -name '*.pot' \) -delete
 
 uninstall:
 	@echo "Uninstalling extension from $(EXTENSION_DIR)..."
