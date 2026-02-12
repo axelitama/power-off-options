@@ -9,6 +9,7 @@ import HibernationButton from './buttons/hibernationButton.js';
 import SuspendThenHibernateButton from './buttons/suspendThenHibernateButton.js';
 import SoftRebootButton from './buttons/softRebootButton.js';
 import RebootToBiosButton from './buttons/rebootToBiosButton.js';
+import SettingsButton from './buttons/settingsButton.js';
 import CustomButton from './buttons/customButton.js';
 
 export default class PowerOffOptions extends Extension {
@@ -91,6 +92,13 @@ export default class PowerOffOptions extends Extension {
                 settingKey: 'show-reboot-to-bios',
                 defaultPosition: 2,
                 shiftDeps: ['screenOff', 'hybridSleep', 'suspendThenHibernate', 'hibernate', 'softReboot'],
+            },
+            {
+                key: 'settings',
+                instance: new SettingsButton(this._systemMenu),
+                settingKey: 'show-settings',
+                defaultPosition: 5,
+                shiftDeps: ['screenOff', 'hybridSleep', 'suspendThenHibernate', 'hibernate', 'softReboot', 'rebootToBios'],
             },
         ];
     }

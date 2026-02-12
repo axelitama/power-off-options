@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 20:43+0100\n"
+"POT-Creation-Date: 2026-01-17 16:08+0100\n"
 "PO-Revision-Date: 2025-10-22 00:32+0200\n"
 "Last-Translator: furik30 <furik@krv.li>\n"
 "Language-Team: French\n"
@@ -32,6 +32,10 @@ msgstr "Redémarrer vers UEFI"
 #: buttons/screenOffButton.js:7 prefs.js:31
 msgid "Turn Off Screen"
 msgstr "Éteindre l'écran"
+
+#: buttons/settingsButton.js:8
+msgid "Customize this menu"
+msgstr "Personnaliser ce menu"
 
 #: buttons/softRebootButton.js:7 prefs.js:55
 msgid "Restart user space (Soft Reboot)"
@@ -140,3 +144,12 @@ msgstr "Redémarre l'espace utilisateur sans redémarrer entièrement le systèm
 #: prefs.js:62
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr "Redémarre directement dans le micrologiciel UEFI du système."
+
+#: prefs.js:67
+msgid "Settings Button (Customize this menu)"
+msgstr "Bouton Paramètres (Personnaliser ce menu)"
+
+#: prefs.js:68
+msgid "Show a button to open these preferences directly from the menu."
+msgstr ""
+"Afficher un bouton pour ouvrir ces préférences directement depuis le menu."
