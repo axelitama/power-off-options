@@ -1,8 +1,14 @@
 # Power Off Options
 
-[简体中文](READMEs/README_zh_cn.md) | [Français](READMEs/README_fr.md) | [Italiano](READMEs/README_it.md) |
-[Português Brasileiro](READMEs/README_pt_br.md) |
-[Pусский](READMEs/README_ru.md)
+[简体中文](READMEs/README_zh-CN.md) | [Français](READMEs/README_fr.md) | [Italiano](READMEs/README_it.md) |
+[Português Brasileiro](READMEs/README_pt-BR.md) |
+[Pусский](READMEs/README_ru.md) | [한국어](READMEs/README_ko-KR.md)
+
+> [!WARNING]  
+> **Translations may not always be up to date.**  
+> If you notice missing or incorrect translations, please open an issue or a pull request.  
+> Contributions are welcome!
+
 
 Power Off Options is a GNOME Shell extension that adds additional buttons to the Power Off dialog:
 
@@ -23,6 +29,9 @@ Power Off Options is a GNOME Shell extension that adds additional buttons to the
 - GNOME Shell;
 - the screen off function only works in X11, Wayland is not supported;
 - Hibernation, Hybrid Sleep and Reboot related options make use of `systemctl` respective commands and must be enabled and configured in your system to work properly.
+
+> [!WARNING]  
+> **Still not working?** Try to check [Issue #1](https://github.com/axelitama/power-off-options/issues/1)
 
 ## Installation
 
