@@ -144,7 +144,7 @@ msgstr "다시 시작 후 시스템 펌웨어 및 BIOS 설정으로 진입합니
 
 #: prefs.js:67
 msgid "Settings Button (Customize this menu)"
-msgstr 설정 버튼 (이 메뉴 사용자 지정)"
+msgstr "설정 버튼 (이 메뉴 사용자 지정)"
 
 #: prefs.js:68
 msgid "Show a button to open these preferences directly from the menu."
