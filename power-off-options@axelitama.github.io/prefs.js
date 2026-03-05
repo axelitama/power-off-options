@@ -63,6 +63,12 @@ export default class ExamplePreferences extends ExtensionPreferences {
         });
         group.add(rebootToBiosRow);
 
+        const settingsRow = new Adw.SwitchRow({
+            title: _('Settings Button (Customize this menu)'),
+            subtitle: _('Show a button to open these preferences directly from the menu.'),
+        });
+        group.add(settingsRow);
+        
         // Bind settings
         settings.bind('show-screenoff', screenOffRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         settings.bind('show-hybrid-sleep', hybridSleepRow, 'active', Gio.SettingsBindFlags.DEFAULT);
@@ -70,6 +76,7 @@ export default class ExamplePreferences extends ExtensionPreferences {
         settings.bind('show-hibernate', hibernateRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         settings.bind('show-soft-reboot', softRebootRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         settings.bind('show-reboot-to-bios', rebootToBiosRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        settings.bind('show-settings', settingsRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         
         const customCommandsGroup = new CustomCommandsManager(settings);
         page.add(customCommandsGroup);

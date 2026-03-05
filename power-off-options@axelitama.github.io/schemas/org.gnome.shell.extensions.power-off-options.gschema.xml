@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
     <schema id="org.gnome.shell.extensions.power-off-options" path="/org/gnome/shell/extensions/power-off-options/">
-
+        <key name="show-settings" type="b">
+            <default>true</default>
+        </key>
+        
         <key name="show-screenoff" type="b">
             <default>false</default>
         </key>
@@ -26,7 +29,6 @@
             <default>false</default>
         </key>
 
-        <!-- A JSON array of custom command objects -->
         <key name="custom-commands" type="s">
             <default>'[]'</default>
         </key>

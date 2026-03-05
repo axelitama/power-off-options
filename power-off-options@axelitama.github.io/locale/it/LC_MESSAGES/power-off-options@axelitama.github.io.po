@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-off-options\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 20:43+0100\n"
+"POT-Creation-Date: 2026-01-17 16:08+0100\n"
 "PO-Revision-Date: 2025-10-21 23:30+0200\n"
 "Last-Translator: axelitama\n"
 "Language-Team: Italian\n"
@@ -33,6 +33,10 @@ msgstr "Riavvia nel BIOS"
 #: buttons/screenOffButton.js:7 prefs.js:31
 msgid "Turn Off Screen"
 msgstr "Spegni Schermo"
+
+#: buttons/settingsButton.js:8
+msgid "Customize this menu"
+msgstr "Personalizza questo menu"
 
 #: buttons/softRebootButton.js:7 prefs.js:55
 msgid "Restart user space (Soft Reboot)"
@@ -141,3 +145,11 @@ msgstr "Riavvia lo spazio utente senza riavviare l'intero sistema."
 msgid "Reboot directly into the system firmware/BIOS setup."
 msgstr ""
 "Riavvia direttamente nella configurazione del firmware/BIOS di sistema."
+
+#: prefs.js:67
+msgid "Settings Button (Customize this menu)"
+msgstr "Pulsante Impostazioni (Personalizza questo menu)"
+
+#: prefs.js:68
+msgid "Show a button to open these preferences directly from the menu."
+msgstr "Mostra un pulsante per aprire queste preferenze direttamente dal menu."
