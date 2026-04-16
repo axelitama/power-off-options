@@ -2,7 +2,7 @@
     "name": "Power Off Options",
     "uuid": "power-off-options@axelitama.github.io",
     "description": "Adds extra options to the GNOME Power Off dialog.",
-    "shell-version": ["48", "49"],
+    "shell-version": ["48", "49", "50"],
     "url": "https://github.com/axelitama/power-off-options",
     "gettext-domain": "power-off-options@axelitama.github.io",
     "settings-schema": "org.gnome.shell.extensions.power-off-options"
