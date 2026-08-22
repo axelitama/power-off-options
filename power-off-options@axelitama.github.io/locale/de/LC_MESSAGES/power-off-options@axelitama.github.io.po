@@ -1,0 +1,158 @@
+# German translation for Power Off Options.
+# Copyright (C) 2026 Power Off Options contributors
+# This file is distributed under the same license as the Power Off Options package.
+# Jonas Nissen, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Power Off Options\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 16:08+0100\n"
+"PO-Revision-Date: 2026-01-17 16:08+0100\n"
+"Last-Translator: Jonas Nissen\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: buttons/hibernationButton.js:7 prefs.js:49
+msgid "Hibernate"
+msgstr "Ruhezustand"
+
+#: buttons/hybridSleepButton.js:7 prefs.js:37
+msgid "Hybrid Sleep"
+msgstr "Hybrider Ruhezustand"
+
+#: buttons/rebootToBiosButton.js:7 prefs.js:61
+msgid "Restart to BIOS"
+msgstr "Neustart ins BIOS"
+
+#: buttons/screenOffButton.js:7 prefs.js:31
+msgid "Turn Off Screen"
+msgstr "Bildschirm ausschalten"
+
+#: buttons/settingsButton.js:8
+msgid "Customize this menu"
+msgstr "Dieses Menü anpassen"
+
+#: buttons/softRebootButton.js:7 prefs.js:55
+msgid "Restart user space (Soft Reboot)"
+msgstr "Benutzerumgebung neu starten (Soft-Reboot)"
+
+#: buttons/suspendThenHibernateButton.js:7 prefs.js:43
+msgid "Suspend then Hibernate"
+msgstr "Bereitschaft, dann Ruhezustand"
+
+#: customButtonsManager.js:10
+msgid "Custom Commands"
+msgstr "Benutzerdefinierte Befehle"
+
+#: customButtonsManager.js:11
+msgid "Manage your custom entries for the power menu."
+msgstr "Benutzerdefinierte Einträge für das Ausschaltmenü verwalten."
+
+#: customButtonsManager.js:43
+msgid "Add New Command..."
+msgstr "Neuen Befehl hinzufügen …"
+
+#: customButtonsManager.js:66
+msgid "at the end"
+msgstr "am Ende"
+
+#: customButtonsManager.js:67
+msgid "Position"
+msgstr "Position"
+
+#: customButtonsManager.js:95
+msgid "Name"
+msgstr "Name"
+
+#: customButtonsManager.js:96
+msgid "Command"
+msgstr "Befehl"
+
+#: customButtonsManager.js:98
+msgid "Position (0 = at the end)"
+msgstr "Position (0 = am Ende)"
+
+#: customButtonsManager.js:104
+msgid "Delete"
+msgstr "Löschen"
+
+#: customButtonsManager.js:107
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: customButtonsManager.js:108
+msgid "Save"
+msgstr "Speichern"
+
+#: prefs.js:13
+msgid "General"
+msgstr "Allgemein"
+
+#: prefs.js:20
+msgid "Power Off Options"
+msgstr "Ausschaltoptionen"
+
+#: prefs.js:22
+msgid ""
+"Choose which options to show in the Power Off dialog.\n"
+"\n"
+"<b>Note:</b> The \"Turn Off Screen\" function only works in X11; Wayland is "
+"not supported.\n"
+"<b>Note:</b> Hibernation, Hybrid Sleep and Reboot related options make use "
+"of 'systemctl' respective commands and must be enabled and configured in "
+"your system to work properly.\n"
+msgstr ""
+"Wählen Sie aus, welche Optionen im Ausschaltmenü angezeigt werden sollen.\n"
+"\n"
+"<b>Hinweis:</b> Die Funktion „Bildschirm ausschalten“ funktioniert nur mit "
+"X11; Wayland wird nicht unterstützt.\n"
+"<b>Hinweis:</b> Die Optionen für Ruhezustand, hybriden Ruhezustand und "
+"Neustart verwenden die entsprechenden 'systemctl'-Befehle und müssen auf "
+"Ihrem System aktiviert und korrekt konfiguriert sein.\n"
+
+#: prefs.js:32
+msgid "Immediately turn off the monitor/display."
+msgstr "Bildschirm sofort ausschalten."
+
+#: prefs.js:38
+msgid "Suspend to RAM and also save system state to disk (safe on power loss)."
+msgstr ""
+"System in den Bereitschaftsmodus versetzen und den Systemzustand zusätzlich "
+"auf der Festplatte speichern (sicher bei Stromausfall)."
+
+#: prefs.js:44
+msgid "Suspend the system and automatically hibernate after a timeout."
+msgstr ""
+"System in den Bereitschaftsmodus versetzen und nach einer gewissen Zeit "
+"automatisch in den Ruhezustand wechseln."
+
+#: prefs.js:50
+msgid ""
+"Save system state to disk and power off (slower to resume than suspend)."
+msgstr ""
+"Systemzustand auf der Festplatte speichern und ausschalten (Wiederaufnahme "
+"dauert länger als aus dem Bereitschaftsmodus)."
+
+#: prefs.js:56
+msgid "Restart the user space without rebooting the entire system."
+msgstr ""
+"Benutzerumgebung neu starten, ohne das gesamte System neu zu starten."
+
+#: prefs.js:62
+msgid "Reboot directly into the system firmware/BIOS setup."
+msgstr "Direkt in die System-Firmware bzw. die BIOS-Einstellungen neu starten."
+
+#: prefs.js:67
+msgid "Settings Button (Customize this menu)"
+msgstr "Einstellungsschaltfläche (Dieses Menü anpassen)"
+
+#: prefs.js:68
+msgid "Show a button to open these preferences directly from the menu."
+msgstr ""
+"Eine Schaltfläche anzeigen, um diese Einstellungen direkt aus dem Menü zu "
+"öffnen."
