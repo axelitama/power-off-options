@@ -52,7 +52,7 @@ export default class ExamplePreferences extends ExtensionPreferences {
         group.add(hibernateRow);
 
         const softRebootRow = new Adw.SwitchRow({
-            title: _('Restart user space (Soft Reboot)'),
+            title: _('Soft Reboot'),
             subtitle: _('Restart the user space without rebooting the entire system.'),
         });
         group.add(softRebootRow);
