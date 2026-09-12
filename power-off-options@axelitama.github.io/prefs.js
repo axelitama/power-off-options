@@ -69,6 +69,12 @@ export default class ExamplePreferences extends ExtensionPreferences {
         });
         group.add(settingsRow);
         
+        const logoutRow = new Adw.SwitchRow({
+            title: _('Show Log Out button'),
+            subtitle: _('Always show Log Out button'),
+        });
+        group.add(logoutRow);
+        
         // Bind settings
         settings.bind('show-screenoff', screenOffRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         settings.bind('show-hybrid-sleep', hybridSleepRow, 'active', Gio.SettingsBindFlags.DEFAULT);
@@ -77,6 +83,11 @@ export default class ExamplePreferences extends ExtensionPreferences {
         settings.bind('show-soft-reboot', softRebootRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         settings.bind('show-reboot-to-bios', rebootToBiosRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         settings.bind('show-settings', settingsRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+        
+        const shell_settings = new Gio.Settings({
+            schema_id: 'org.gnome.shell'
+        });
+        shell_settings.bind('always-show-log-out', logoutRow, 'active', Gio.SettingsBindFlags.DEFAULT);
         
         const customCommandsGroup = new CustomCommandsManager(settings);
         page.add(customCommandsGroup);
