@@ -1,8 +1,8 @@
 # Power Off Options
 
-[简体中文](READMEs/README_zh-CN.md) | [Français](READMEs/README_fr.md) | [Italiano](READMEs/README_it.md) |
-[Português Brasileiro](READMEs/README_pt-BR.md) |
-[Pусский](READMEs/README_ru.md) | [한국어](READMEs/README_ko-KR.md)
+[Deutsch (de)](READMEs/README_de.md) | [Français (fr)](READMEs/README_fr.md) | [Italiano (it)](READMEs/README_it.md) |
+[한국어 (ko-KR)](READMEs/README_ko-KR.md) | [Português Brasileiro (pt-BR)](READMEs/README_pt-BR.md) |
+[Pусский (ru)](READMEs/README_ru.md) | [简体中文 (zh-CN)](READMEs/README_zh-CN.md)
 
 > [!WARNING]  
 > **Translations may not always be up to date.**  
