@@ -1,0 +1,48 @@
+name: GNOME version check
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      METADATA: power-off-options@axelitama.github.io/metadata.json
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Find latest stable GNOME Shell version
+        id: gnome
+        run: |
+          latest=$(curl -fsSL "https://gitlab.gnome.org/api/v4/projects/GNOME%2Fgnome-shell/repository/tags?per_page=100" \
+            | jq -r '.[].name' \
+            | grep -E '^[0-9]+\.[0-9]+$' \
+            | cut -d. -f1 | sort -n | tail -1)
+          test -n "$latest"
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          echo "Latest stable GNOME Shell: $latest"
+
+      - name: Open issue if version is missing
+        run: |
+          v="${{ steps.gnome.outputs.latest }}"
+          if jq -e --arg v "$v" '.["shell-version"] | index($v)' "$METADATA" > /dev/null; then
+            echo "GNOME $v is already supported."
+            exit 0
+          fi
+          title="GNOME $v released: check compatibility"
+          if [ -n "$(gh issue list --state all --search "\"$title\" in:title" --json number -q '.[].number')" ]; then
+            echo "Issue already exists."
+            exit 0
+          fi
+          gh issue create --title "$title" --body "GNOME Shell $v is out, but \`$METADATA\` lists: $(jq -c '.["shell-version"]' "$METADATA").
+
+          Steps: test the extension on GNOME $v, add \"$v\" to \`shell-version\`, publish a new version on extensions.gnome.org.
+
+          _Opened automatically by the GNOME version check workflow._"
